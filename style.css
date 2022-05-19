@@ -1,3 +1,25 @@
+/*
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*/
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: space-between;
+}
+
+body {
+    color: var(--text);
+    font-family: 'Lato', sans-serif;
+
+    background-color: var(--background);
+}
+
 /* LIGHT/DARK THEME */
 
 html[data-theme="light"] {
@@ -200,6 +222,43 @@ nav {
     }
 }
 
+/* LIGHT DARK BUTTON */
+
+#themebutton {
+    color: var(--text);
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    text-align: center;
+    
+    text-transform: uppercase;
+
+    border: solid var(--color-blue);
+    -webkit-appearance: none;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    
+    background-color: var(--background-button);
+
+    display: inline-block;
+    width: 60px;
+    height: 37px;
+
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 700px)  {
+    .theme-button {
+        margin-top: 10px;
+    }
+
+    #themebutton {
+        font-size: 12px;
+        width: 56px;
+        height: 35px;
+    }
+}
+
 /* HEADER */
 
 h1 {
@@ -214,13 +273,6 @@ h1 {
 }
 
 /* TEXT */
-
-body {
-    color: var(--text);
-    font-family: 'Lato', sans-serif;
-
-    background-color: var(--background);
-}
 
 main {
     margin: 0 15vw;
@@ -270,49 +322,7 @@ main a:visited {
     }
 }
 
-/* LIGHT DARK BUTTON */
-
-#themebutton {
-    color: var(--text);
-    font-family: 'Lato', sans-serif;
-    font-weight: 300;
-    font-size: 14px;
-    text-align: center;
-    
-    text-transform: uppercase;
-
-    border: solid var(--color-blue);
-    outline: none;
-    
-    background-color: var(--background-button);
-
-    display: inline-block;
-    width: 60px;
-    height: 37px;
-
-    cursor: pointer;
-}
-
-@media only screen and (max-width: 700px)  {
-    .theme-button {
-        margin-top: 10px;
-    }
-
-    #themebutton {
-        font-size: 12px;
-        width: 56px;
-        height: 35px;
-    }
-}
-
 /* FOOTER */
-
-.container {
-    display: flex;
-    flex-direction: column;
-    min-height: 97vh;
-    justify-content: space-between;
-}
 
 footer {
     text-align: center;
