@@ -9,7 +9,7 @@
 .container {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    min-height: 97vh;
     justify-content: space-between;
 }
 
@@ -20,7 +20,7 @@ body {
     background-color: var(--background);
 }
 
-/* LIGHT/DARK THEME */
+/* LIGHT & DARK THEME */
 
 html[data-theme="light"] {
     --text: black;
@@ -241,8 +241,8 @@ nav {
     background-color: var(--background-button);
 
     display: inline-block;
-    width: 60px;
-    height: 37px;
+    width: 65px;
+    height: 40px;
 
     cursor: pointer;
 }
@@ -254,8 +254,8 @@ nav {
 
     #themebutton {
         font-size: 12px;
-        width: 56px;
-        height: 35px;
+        width: 50px;
+        height: 31px;
     }
 }
 
