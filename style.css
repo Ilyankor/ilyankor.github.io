@@ -180,6 +180,11 @@ nav {
     -webkit-appearance: none;
     border-radius: 0;
     -webkit-border-radius: 0;
+
+    justify-content: center;
+
+    padding-left: 0;
+    padding-right: 0;
     
     background-color: var(--background-button);
 
@@ -254,9 +259,6 @@ nav {
         font-size: 14px;
         width: 56px;
         height: 35px;
-
-        padding-left: 0;
-        padding-right: 0;
     }
 }
 
