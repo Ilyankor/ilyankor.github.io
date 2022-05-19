@@ -253,10 +253,7 @@ main a:visited {
 }
 
 .circle-picture {
-    border-top-left-radius: 50% 50%; 
-    border-top-right-radius: 50% 50%; 
-    border-bottom-right-radius: 50% 50%; 
-    border-bottom-left-radius: 50% 50%; 
+    border-radius: 50% 50%; 
 
     display: block;
     margin-left: auto;
@@ -276,27 +273,23 @@ main a:visited {
 
 /* LIGHT DARK BUTTON */
 
-.theme-button {
-    display: flex;
-}
-
 #themebutton {
     color: var(--text);
     font-family: 'Lato', sans-serif;
     font-weight: 300;
     font-size: 14px;
     text-align: center;
+    
     text-transform: uppercase;
 
-    border-color: var(--color-blue);
-    border-style: solid;
-    border-radius: 0;
+    border: solid var(--color-blue);
+    outline: none;
     
     background-color: var(--background-button);
 
     display: inline-block;
-    width: 50px;
-    height: 31px;
+    width: 60px;
+    height: 37px;
 
     cursor: pointer;
 }
@@ -308,6 +301,8 @@ main a:visited {
 
     #themebutton {
         font-size: 12px;
+        width: 56px;
+        height: 35px;
     }
 }
 
