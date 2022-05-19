@@ -2,7 +2,7 @@
 <svg width="48mm" height="48mm" version="1.1" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
     <g transform="translate(-138.12 -79.91)">
         <g transform="translate(19.831 -11.225)">
-            <circle cx="142.29" cy="115.13" r="24" fill="#fff"/>
+            <circle cx="142.29" cy="115.13" r="24" fill="#ebebeb"/>
             <g transform="translate(2.8146 1.3451)">
                 <g transform="translate(30.875 -77.276)">
                     <polyline transform="matrix(.26458 0 0 .26458 53.268 165.81)" points="190.45 100.99 190.45 20.463" fill="none" stroke="#000" stroke-linejoin="bevel" stroke-width="2.73"/>
