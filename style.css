@@ -168,26 +168,26 @@ nav {
 /* LIGHT DARK BUTTON */
 
 #themebutton {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
     color: var(--text);
     font-family: 'Lato', sans-serif;
     font-weight: 300;
     font-size: 16px;
     text-align: center;
-    
     text-transform: uppercase;
-
+    
     border: solid 2px var(--color-blue);
-    -webkit-appearance: none;
     border-radius: 0;
+    -webkit-appearance: none;
     -webkit-border-radius: 0;
 
-    justify-content: center;
-
-    padding-left: 0;
-    padding-right: 0;
-    
     background-color: var(--background-button);
 
+    justify-content: center;
+    
     display: inline-block;
     width: 64px;
     height: 40px;
