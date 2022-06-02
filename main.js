@@ -1,25 +1,30 @@
 const currentTheme = localStorage.getItem("theme");
+var elem = document.getElementById("themebutton");
 
 if (currentTheme == "dark") {
     document.documentElement.setAttribute("data-theme", "dark");
+    elem.value = "light";
+}
+else {
+    elem.value = "dark";
 }
 
 function lightdark() {
     var temptheme = document.documentElement.getAttribute("data-theme");
-    var elem = document.getElementById("themebutton");
 
     if (temptheme=="dark") {
         document.documentElement.setAttribute("data-theme","light");
-        elem.value = "light";
         theme = "light"
+        elem.value = "dark";
     }
     else { 
         document.documentElement.setAttribute("data-theme", "dark");
-        elem.value = "dark";
         theme = "dark"
+        elem.value = "light";
     }
 
     localStorage.setItem("theme", theme);
+    const currentTheme = localStorage.getItem("theme");
 }
 
 function removeColor(event) {

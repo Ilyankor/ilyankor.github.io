@@ -180,14 +180,13 @@ nav {
     text-transform: uppercase;
     
     border: solid 2px var(--color-blue);
-    border-radius: 0;
     -webkit-appearance: none;
     -webkit-border-radius: 0;
+    border-radius: 0;
 
     background-color: var(--background-button);
 
     justify-content: center;
-
 
     width: 64px;
     height: 40px;
