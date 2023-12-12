@@ -1,0 +1,2087 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Miles Bi" />
+  <title>MATH 6302 Final Exam Review</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">MATH 6302 Final Exam Review</h1>
+<p class="author">Miles Bi</p>
+<p class="date">Fall 2023 (with Dr. Kalantar)</p>
+</header>
+<hr />
+<h1 id="groups">Groups</h1>
+<h2 id="definitions">Definitions</h2>
+<h4 id="group">group</h4>
+<p>A <strong>group</strong> is a set with an associative binary
+operation that has an identity element and every element has an
+inverse.<br />
+Notation: blah blah blah</p>
+<h4 id="subgroup">subgroup</h4>
+<p>Let <span class="math inline">\(G\)</span> be a group. A non-empty
+subset <span class="math inline">\(H \subseteq G\)</span> is a
+<strong>subgroup</strong> if and only if for all <span
+class="math inline">\(a, b, \in H\)</span>,</p>
+<ol>
+<li><p><span class="math inline">\(ab \in H\)</span></p></li>
+<li><p><span class="math inline">\(a^{-1} \in H\)</span></p></li>
+</ol>
+<p>If <span class="math inline">\(H\)</span> is a subgroup of <span
+class="math inline">\(G\)</span> it is denoted <span
+class="math inline">\(H \leq G\)</span>.</p>
+<h4 id="coset">coset</h4>
+<p>Let <span class="math inline">\(H\)</span> be a subgroup of <span
+class="math inline">\(G\)</span> and <span class="math inline">\(g \in
+G\)</span>. The <strong>left coset</strong> of <span
+class="math inline">\(H\)</span> corresponding to <span
+class="math inline">\(g\)</span> is <span class="math inline">\(gH
+\coloneqq \left\{gh : h \in H\right\}\)</span>. The <strong>right
+coset</strong> of <span class="math inline">\(H\)</span> corresponding
+to <span class="math inline">\(g\)</span> is <span
+class="math inline">\(Hg \coloneqq \left\{hg : h \in H\right\}\)</span>.
+The set <span class="math inline">\(G/H \coloneqq \left\{gH : g\in
+G\right\}\)</span> is the <strong>left coset space of <span
+class="math inline">\(G \mod H\)</span></strong>. Any element of a coset
+is called a <strong>representative</strong> for the coset.</p>
+<h4 id="normal-subgroup">normal subgroup</h4>
+<p>A subgroup <span class="math inline">\(H\)</span> of <span
+class="math inline">\(G\)</span> is a <strong>normal subgroup</strong>
+if for all <span class="math inline">\(a \in G\)</span>, <span
+class="math inline">\(aHa^{-1} = \left\{aha^{-1} : h \in H\right\} =
+H\)</span>. This is denoted <span class="math inline">\(H
+\trianglelefteq G\)</span>.</p>
+<h4 id="quotient-group">quotient group</h4>
+<p>Let <span class="math inline">\(H\)</span> be a normal subgroup of
+<span class="math inline">\(G\)</span>. <span
+class="math inline">\(G/H\)</span> is the <strong>quotient
+group</strong> of <span class="math inline">\(G \mod H\)</span> with the
+operations <span class="math display">\[\begin{aligned}
+        aH \star bH &amp;\coloneqq (ab)H \\
+        (aH)^{-1} &amp;\coloneqq a^{-1}H
+    
+\end{aligned}\]</span></p>
+<h4 id="group-homomorphism">group homomorphism</h4>
+<p>Let <span class="math inline">\(G_1, G_2\)</span> be groups. A
+<strong>group homomorphism</strong> from <span
+class="math inline">\(G_1\)</span> to <span
+class="math inline">\(G_2\)</span> is a function <span
+class="math inline">\(\phi:G_1 \rightarrow G_2\)</span> satisfying <span
+class="math inline">\(\phi(ab) = \phi(a)\phi(b)\)</span> for all <span
+class="math inline">\(a,b \in G\)</span>. <span
+class="math inline">\(\phi\)</span> is an <strong>isomorphism</strong>
+if and only if <span class="math inline">\(\phi\)</span> is a bijection.
+If there exists an isomorphism between <span
+class="math inline">\(G_1\)</span> and <span
+class="math inline">\(G_2\)</span>, then <span
+class="math inline">\(G_1\)</span> is <strong>isomorphic</strong> to
+<span class="math inline">\(G_2\)</span>, denoted <span
+class="math inline">\(G_1 \cong G_2\)</span>.</p>
+<h4 id="kernel">kernel</h4>
+<p>Let <span class="math inline">\(\phi:G \rightarrow H\)</span> be
+group homomorphism. The set <span class="math inline">\(\ker{(\phi)}
+\coloneqq \left\{g \in G : \phi(g) = e_H \right\}\)</span> is the
+<strong>kernel</strong> of <span
+class="math inline">\(\phi\)</span>.</p>
+<h4 id="direct-product">direct product</h4>
+<p>Let <span class="math inline">\(G_1, G_2\)</span> be groups. The
+<strong>direct product</strong> of <span
+class="math inline">\(G_1\)</span> and <span
+class="math inline">\(G_2\)</span> is <span class="math inline">\(G_1
+\times G_2\)</span>, with operation <span
+class="math inline">\(\star\)</span> defined componenetwise:</p>
+<ul>
+<li><p><span class="math inline">\((g_1, g_2) \star (h_1, h_2) =
+(g_1h_1, g_2h_2)\)</span></p></li>
+<li><p><span class="math inline">\((g_1, g_2)^{-1} = (g_1^{-1}, g_2^{-1}
+)\)</span></p></li>
+</ul>
+<h4 id="projection-homomorphism">projection homomorphism</h4>
+<p>Let <span class="math inline">\(i = 1,2\)</span>. The
+<strong>projection homomorphism</strong> is <span
+class="math inline">\(\pi_i: G_1 \times G_2 \rightarrow G_i\)</span>
+defined by <span class="math inline">\(\pi_i(g_1,g_2) = g_i\)</span>.
+This is a surjective homomorphism.</p>
+<h4 id="subgroup-generated-by-set">subgroup generated by set</h4>
+<p>Let <span class="math inline">\(G\)</span> be a group and <span
+class="math inline">\(S \subseteq G\)</span> be a non-empty subset. The
+<strong>subgroup generated by <span
+class="math inline">\(S\)</span></strong> is the smallest subgroup of
+<span class="math inline">\(G\)</span> that contains <span
+class="math inline">\(S\)</span> and is denoted <span
+class="math inline">\(\langle S \rangle\)</span>.</p>
+<h4 id="finitely-generated-group">finitely generated group</h4>
+<p>A group <span class="math inline">\(G\)</span> is <strong>finitely
+generated</strong> if and only if there exists a subset <span
+class="math inline">\(S \subseteq G\)</span> such that <span
+class="math inline">\(\langle S\rangle = G\)</span>.</p>
+<h4 id="cyclic-group">cyclic group</h4>
+<p>A group <span class="math inline">\(G\)</span> is
+<strong>cyclic</strong> if there exists <span class="math inline">\(g
+\in G\)</span> such that <span class="math inline">\(G = \langle
+\{g\}\rangle\)</span>.</p>
+<h4 id="torsion-element">torsion element</h4>
+<p>Let <span class="math inline">\(g \in G\)</span>. Then <span
+class="math inline">\(g\)</span> is a <strong>torsion element</strong>
+if there exists <span class="math inline">\(n \in \mathbb{N}\)</span>
+such that <span class="math inline">\(g^n = e\)</span>.</p>
+<h4 id="order-of-an-element">order of an element</h4>
+<p>The <strong>order</strong> of <span class="math inline">\(g \in
+G\)</span> is the minimum <span class="math inline">\(n \in
+\mathbb{N}\)</span> such that <span class="math inline">\(g^n =
+e\)</span>. If there is no such <span class="math inline">\(n\)</span>,
+then <span class="math inline">\(g\)</span> has <strong>infinite
+order</strong>. The order of <span class="math inline">\(g\)</span> is
+denoted: <span class="math display">\[o(g) \coloneqq \min \left\{n \in
+\mathbb{N} \mid g^n = e\right\}\]</span></p>
+<h4 id="torsion-group">torsion group</h4>
+<p><span class="math inline">\(G\)</span> is a <strong>torsion
+group</strong> if and only if every <span class="math inline">\(g \in
+G\)</span> is a torsion element. <span class="math inline">\(G\)</span>
+is <strong>torsion-free</strong> if and only if <span
+class="math inline">\(G\)</span> has no non-trivial torsion element.</p>
+<h4 id="symmetric-group">symmetric group</h4>
+<p>The <strong>symmetric group</strong> <span
+class="math inline">\(S_n\)</span> is the set of all bijective functions
+on the set <span class="math inline">\(\{1, 2, \dots, n\}\)</span>. More
+generally, let <span class="math inline">\(X\)</span> be a set. The
+<strong>symmetric group</strong> <span
+class="math inline">\(\operatorname{Sym}{(X)}\)</span> is the set of all
+bijective functions <span class="math inline">\(f : X \rightarrow
+X\)</span>.</p>
+<h4 id="parity-of-a-permutation">parity of a permutation</h4>
+<p>The parity of a permutation is the parity of the number (odd or even)
+of <span class="math inline">\(2\)</span>-cycles that the permutation
+can be broken up into.</p>
+<h4 id="group-action">group action</h4>
+<p>Let <span class="math inline">\(G\)</span> be a group and <span
+class="math inline">\(X\)</span> be a set. A <strong>left action of
+<span class="math inline">\(G\)</span> on <span
+class="math inline">\(X\)</span></strong> is a map <span
+class="math inline">\(\beta : G \times X \rightarrow X\)</span> such
+that for all <span class="math inline">\(a,b,\in G\)</span> and <span
+class="math inline">\(x \in X\)</span>,</p>
+<ol>
+<li><p><span class="math inline">\(\beta(e, x) = x\)</span></p></li>
+<li><p><span class="math inline">\(\beta(a, \beta(b, x)) = \beta(ab,
+x)\)</span></p></li>
+</ol>
+<p>When <span class="math inline">\(\beta\)</span> is clearly an action,
+we write <span class="math inline">\(a \cdot x \coloneqq
+\beta(a,x)\)</span>. A <strong>right action</strong> is defined
+similarly. A left action is also denoted: <span class="math display">\[G
+\overset{\beta}{\curvearrowright} X\]</span></p>
+<h4 id="stabilizer">stabilizer</h4>
+<p>Let <span class="math inline">\(G \curvearrowright X\)</span> and
+<span class="math inline">\(x \in X\)</span>. The
+<strong>stabilizer</strong> of <span class="math inline">\(x\)</span> is
+the set <span class="math inline">\(G_x \coloneqq \left\{g \in G \mid
+g\cdot x = x \right\}\)</span>.</p>
+<h4 id="kernel-of-a-group-action">kernel of a group action</h4>
+<p>Let <span class="math inline">\(G \curvearrowright X\)</span>. The
+<strong>kernel</strong> of the action is the set <span
+class="math inline">\(K \coloneqq \left\{g \in G \mid g \cdot x = x \
+\text{for all} \ x \in X\right\}\)</span>. The elements of <span
+class="math inline">\(G\)</span> which fix all the elements of <span
+class="math inline">\(X\)</span>.</p>
+<h4 id="faithful-action">faithful action</h4>
+<p>Let <span class="math inline">\(G \curvearrowright X\)</span>. The
+action is <strong>faithful</strong> if and only if the kernel is <span
+class="math inline">\(\{e\}\)</span>. Distinct elements of <span
+class="math inline">\(G\)</span> induce distinct permutations of <span
+class="math inline">\(X\)</span>.</p>
+<h4 id="free-action">free action</h4>
+<p>Let <span class="math inline">\(G \curvearrowright X\)</span>. The
+action is <strong>free</strong> if and only if <span
+class="math inline">\(G_x = \{e\}\)</span> for all <span
+class="math inline">\(x \in X\)</span>. No non-trivial element of <span
+class="math inline">\(G\)</span> fixes a point in <span
+class="math inline">\(G\)</span>.</p>
+<h4 id="center">center</h4>
+<p>Let <span class="math inline">\(G\)</span> be a group. The
+<strong>center</strong> of a group is <span
+class="math inline">\(\mathrm{Z}(G) \coloneqq \left\{g \in G \mid gx =
+xg \ \text{for all} \ x \in G\right\}\)</span>.</p>
+<h4 id="centralizer">centralizer</h4>
+<p>Let <span class="math inline">\(S \subseteq G\)</span>. The
+<strong>centralizer</strong> of <span class="math inline">\(S\)</span>
+in <span class="math inline">\(G\)</span> is the set <span
+class="math inline">\(\mathrm{C}_G(S) \coloneqq \left\{g \in G \mid gs =
+sg \ \text{for all} \ s \in S\right\}\)</span></p>
+<h4 id="orbit">orbit</h4>
+<p>Let <span class="math inline">\(G \curvearrowright X\)</span>. Define
+the relation <span class="math inline">\(x \sim_G y\)</span> if and only
+if there exists <span class="math inline">\(g \in G\)</span> such that
+<span class="math inline">\(g \cdot x = y\)</span>. This is an
+equivalence relation called the <strong>orbit equivalence
+relation</strong>. For every <span class="math inline">\(x \in
+X\)</span>, the equivalence class <span
+class="math inline">\([x]\)</span> is called the <strong>orbit</strong>
+of <span class="math inline">\(x\)</span> and <span
+class="math inline">\(\operatorname{Orb}{(x)} = [x] = \left\{g\cdot x
+\mid g\in G\right\}\)</span>.</p>
+<h4 id="conjugacy-class">conjugacy class</h4>
+<p>Consider the action of <span class="math inline">\(G \curvearrowright
+G\)</span> by <span class="math inline">\(g\cdot x = gxg^{-1}\)</span>.
+The <strong>conjugacy class</strong> of <span class="math inline">\(x
+\in G\)</span> is <span class="math inline">\(\mathrm{C}_x =
+\operatorname{Orb}{(x)} = [x]\)</span>.</p>
+<h4 id="index">index</h4>
+<p>Let <span class="math inline">\(H \leq G\)</span>. The cardinality of
+the coset space <span class="math inline">\(G/H\)</span> is called the
+of <span class="math inline">\(H\)</span> in <span
+class="math inline">\(G\)</span>, denoted <span class="math inline">\([G
+: H]\)</span>.</p>
+<h4 id="symmetric-set">symmetric set</h4>
+<p>Let <span class="math inline">\(S \subseteq G\)</span> be non-empty.
+<span class="math inline">\(S\)</span> is a <strong>symmetric
+set</strong> if <span class="math inline">\(S = S^{-1}\)</span>.</p>
+<h4 id="word-length">word length</h4>
+<p>Let <span class="math inline">\(G\)</span> be a group generated by a
+non-empty symmetric set <span class="math inline">\(S \subseteq
+G\)</span>. For every <span class="math inline">\(g \in G, g \neq
+e\)</span>, define the <strong>word legnth</strong> of <span
+class="math inline">\(g\)</span> with respect to <span
+class="math inline">\(S\)</span> to be <span
+class="math display">\[\lvert g \rvert_S \coloneqq \min \left\{n \in
+\mathbb{N} \mid g = a_1 a_2 \cdots a_n, \ \text{for some} \ a_1, a_2,
+\dots, a_n \in S\right\}\]</span> Define <span
+class="math inline">\(\lvert e \rvert_S \coloneqq 0\)</span>.</p>
+<h4 id="ball">ball</h4>
+<p>Let <span class="math inline">\(G\)</span> be a group generated by a
+non-empty symmetric set <span class="math inline">\(S \subseteq
+G\)</span>. For every <span class="math inline">\(n \in
+\mathbb{N}\)</span>, define the <strong>ball</strong> of radius <span
+class="math inline">\(n\)</span> around the neutral element to be <span
+class="math inline">\(B_n \coloneqq \left\{ g \in G \mid \lvert
+g\rvert_S \leq n\right\}\)</span>. Define the <strong>sphere</strong> of
+radius <span class="math inline">\(n\)</span> to be <span
+class="math inline">\(S_n \coloneqq \left\{ g \in G \mid \lvert
+g\rvert_S = n\right\}\)</span>.</p>
+<h4 id="word-metric">word metric</h4>
+<p>The <strong>word metric</strong> on a group <span
+class="math inline">\(G\)</span> generated by a non-empety symmetric
+subset <span class="math inline">\(S\)</span> is <span
+class="math display">\[d : G \times G \rightarrow \mathbb{N}, \quad
+d(g,h) \coloneqq \lvert g^{-1}h \rvert_S\]</span></p>
+<h4 id="free-group">free group</h4>
+<p>Insert definition of free group.</p>
+<h2 id="theorems">Theorems</h2>
+<div class="theorem">
+<p><strong>Theorem 1</strong> (). <em>Let <span
+class="math inline">\(H\)</span> be a subgroup of <span
+class="math inline">\(G\)</span>, and <span class="math inline">\(a,b,
+\in G\)</span>. The following are equivalent:</em></p>
+<ol>
+<li><p><em><span class="math inline">\(aH = bH\)</span></em></p></li>
+<li><p><em><span class="math inline">\(a \in bH\)</span></em></p></li>
+<li><p><em><span class="math inline">\(b \in aH\)</span></em></p></li>
+<li><p><em><span class="math inline">\(a^{-1}b \in
+H\)</span></em></p></li>
+<li><p><em><span class="math inline">\(b^{-1}a \in
+H\)</span></em></p></li>
+<li><p><em><span class="math inline">\(aH \cap bH \neq
+\emptyset\)</span></em></p></li>
+</ol>
+</div>
+<div class="theorem">
+<p><strong>Theorem 2</strong> (). <em>The left cosets of a subgroup give
+a partition of the group.</em></p>
+</div>
+<div class="theorem">
+<p><strong>Theorem 3</strong> (). <em>The following are
+equivalent:</em></p>
+<ol>
+<li><p><em><span class="math inline">\(H\)</span> is a normal subgroup
+of <span class="math inline">\(G\)</span>.</em></p></li>
+<li><p><em>The operation <span class="math inline">\(\star\)</span> on
+<span class="math inline">\(G/H\)</span> defined by <span
+class="math inline">\(aH \star bH \coloneqq (ab)H\)</span> is well
+defined.</em></p></li>
+<li><p><em>For all <span class="math inline">\(a\in G\)</span>, <span
+class="math inline">\(aH = Ha\)</span>.</em></p></li>
+<li><p><em>For all <span class="math inline">\(a \in G\)</span>, <span
+class="math inline">\(aHa^{-1} \subseteq H\)</span>.</em></p></li>
+</ol>
+</div>
+<div class="theorem">
+<p><strong>Theorem 4</strong> (). <em>Every subgroup of an abelian group
+is normal.</em></p>
+</div>
+<div class="theorem">
+<p><strong>Theorem 5</strong> (). <em>Let <span
+class="math inline">\(\phi:G \rightarrow H\)</span> be group
+homomorphism.</em></p>
+<ol>
+<li><p><em><span class="math inline">\(\ker{(\phi)}\)</span> is a normal
+subgroup of <span class="math inline">\(G\)</span>.</em></p></li>
+<li><p><em><span
+class="math inline">\(\operatorname{Im}{(\phi)}\)</span> is a subgroup
+of <span class="math inline">\(H\)</span></em></p></li>
+</ol>
+</div>
+<div class="theorem">
+<p><strong>Theorem 6</strong> (First isomorphism theorem). <em>Let <span
+class="math inline">\(\phi:G \rightarrow H\)</span> be group
+homomorphism and let <span class="math inline">\(K =
+\ker{(\phi)}\)</span>. Then <span class="math inline">\(G/\ker{(\phi)}
+\cong \operatorname{Im}{(\phi)}\)</span> by the map <span
+class="math inline">\(\psi: G/\ker{(\phi)} \rightarrow
+\operatorname{Im}{(\phi)}, \psi(gK) \coloneqq \phi(g)\)</span>. If <span
+class="math inline">\(\phi\)</span> is surjective then <span
+class="math inline">\(G/\ker{(\phi)} \cong H\)</span>.</em></p>
+</div>
+<div class="theorem">
+<p><strong>Theorem 7</strong> (). <em>The maps <span
+class="math inline">\(\phi_1 : G_1 \rightarrow G_1 \times G_2\)</span>
+and <span class="math inline">\(\phi_2 : G_2 \rightarrow G_1 \times
+G_2\)</span> defined by</em></p>
+<ul>
+<li><p><em><span class="math inline">\(\phi_1(g_1) = (g_1,
+e_{G_2})\)</span></em></p></li>
+<li><p><em><span class="math inline">\(\phi_2(g_2) = (e_{G_1},
+g_2)\)</span></em></p></li>
+</ul>
+<p><em>are injective homomorphisms.</em></p>
+</div>
+<div class="theorem">
+<p><strong>Theorem 8</strong> (). <em>Let <span
+class="math inline">\(\phi: G \rightarrow K\)</span> be a group
+homormophism. <span class="math inline">\(\phi\)</span> is injective if
+and only if <span class="math inline">\(\ker{(\phi)} =
+\{e\}\)</span>.</em></p>
+</div>
+<div class="theorem">
+<p><strong>Theorem 9</strong> (). <em>Let <span
+class="math inline">\(G\)</span> be a group and <span
+class="math inline">\(S \subseteq G\)</span> be a non-empty subset. Then
+<span class="math display">\[\langle S \rangle = \bigcap_{S \subseteq H
+\leq G} H = \left\{a_1 a_2 \dots a_n \mid n \in \mathbb{N}, a_i \in S
+\cup S^{-1}\right\}\]</span> where <span class="math inline">\(S^{-1} =
+\left\{a^{-1} : a \in S\right\}\)</span>.</em></p>
+</div>
+<div class="theorem">
+<p><strong>Theorem 10</strong> (). <em>Every finitely generated group is
+countable.</em></p>
+</div>
+<div class="theorem">
+<p><strong>Theorem 11</strong> (Fundamental theorem of finitely
+generated abelian groups). <em>Let <span
+class="math inline">\(G\)</span> be a finitely generated abelian group.
+Then there are <span class="math inline">\(r, n_1, n_2, \dots, n_k \in
+\mathbb{N}\)</span> such that <span class="math display">\[G \cong
+\mathbb{Z}^r \times \mathbb{Z}_{n_1} \times \mathbb{Z}_{n_2} \times
+\cdots \times \mathbb{Z}_{n_k}\]</span></em></p>
+</div>
+<div class="theorem">
+<p><strong>Theorem 12</strong> (Lagrange’s theorem). <em>Let <span
+class="math inline">\(H\)</span> be a subgroup of a finite group <span
+class="math inline">\(G\)</span>. Then <span
+class="math inline">\(\lvert G\rvert = \lvert H\rvert \lvert G / H
+\rvert\)</span>.</em></p>
+</div>
+<div class="theorem">
+<p><strong>Theorem 13</strong> (). <em>Let <span class="math inline">\(a
+\in G\)</span> be a torsion element and let <span
+class="math inline">\(n \in \mathbb{N}\)</span>. Then <span
+class="math inline">\(a^n = e\)</span> if and only if <span
+class="math inline">\(o(a)\)</span> divides <span
+class="math inline">\(n\)</span>.</em></p>
+</div>
+<div class="theorem">
+<p><strong>Theorem 14</strong> (). <em>Let <span
+class="math inline">\(G\)</span> be a finite group and <span
+class="math inline">\(p\)</span> be a prime number that divides <span
+class="math inline">\(\lvert G \rvert\)</span>. Then there exists <span
+class="math inline">\(g \in G\)</span> such that <span
+class="math inline">\(o(g) = p\)</span>.</em></p>
+</div>
+<div class="theorem">
+<p><strong>Theorem 15</strong> (). <em>If <span
+class="math inline">\(G\)</span> is a finite group such that <span
+class="math inline">\(\lvert G \rvert = p\)</span> where <span
+class="math inline">\(p\)</span> is a prime number, then <span
+class="math inline">\(G \cong \mathbb{Z}_p\)</span>.</em></p>
+</div>
+<div class="theorem">
+<p><strong>Theorem 16</strong> (). <em>Let <span
+class="math inline">\(\beta: G \times X \rightarrow X\)</span> be a left
+action of <span class="math inline">\(G\)</span> on <span
+class="math inline">\(X\)</span>. The map <span
+class="math inline">\(\alpha_g: X \rightarrow X\)</span> defined by
+<span class="math inline">\(\alpha_g(x) \coloneqq g \cdot x\)</span> is
+a bijection. The map <span class="math inline">\(\alpha: G \rightarrow
+\operatorname{Sym}{(X)}\)</span>, <span class="math inline">\(\alpha(g)
+\coloneqq \alpha_g\)</span> is a group homomorphism.</em></p>
+</div>
+<div class="theorem">
+<p><strong>Theorem 17</strong> (). <em>Let <span
+class="math inline">\(\alpha : G \rightarrow
+\operatorname{Sym}{(X)}\)</span> be a group homomorphism. Define <span
+class="math inline">\(\beta : G \times X \rightarrow X\)</span> be <span
+class="math inline">\(\beta(g, x) = \left(\alpha(g)\right)(x)\)</span>.
+Then <span class="math inline">\(\beta\)</span> is a left action of
+<span class="math inline">\(G\)</span> on <span
+class="math inline">\(X\)</span>.</em></p>
+</div>
+<div class="theorem">
+<p><strong>Theorem 18</strong> (). <em>Let <span class="math inline">\(G
+\curvearrowright X\)</span>. Then</em></p>
+<ol>
+<li><p><em>For all <span class="math inline">\(x \in X\)</span>, <span
+class="math inline">\(G_x \leq G\)</span>.</em></p></li>
+<li><p><em>The action is faithful if and only if for all <span
+class="math inline">\(g \neq e\)</span>, there exist <span
+class="math inline">\(x \in X\)</span> such that <span
+class="math inline">\(g \cdot x \neq x\)</span>. Every group element
+moves at least 1 point except <span
+class="math inline">\(e\)</span>.</em></p></li>
+<li><p><em>The action is free if and only if for all <span
+class="math inline">\(g \neq e, x \in X\)</span>, <span
+class="math inline">\(g \cdot x \neq x\)</span>. Every group element
+moves all the points except <span
+class="math inline">\(e\)</span>.</em></p></li>
+<li><p><em>The kernel is a normal subgroup of <span
+class="math inline">\(G\)</span> and <span class="math inline">\(K =
+\displaystyle \bigcap_{x\in X} G_x\)</span>. The kernel of a group
+action is the intersection of all the stabilizers.</em></p></li>
+</ol>
+</div>
+<div class="theorem">
+<p><strong>Theorem 19</strong> (). <em>Let <span
+class="math inline">\(X\)</span> be a set and <span
+class="math inline">\(G\)</span> a group acting on <span
+class="math inline">\(X\)</span>. Then for every <span
+class="math inline">\(g \in G\)</span> and <span class="math inline">\(x
+\in X\)</span>, the stabilizer <span class="math inline">\(g\cdot
+x\)</span> is <span class="math inline">\(G_{g\cdot x} = \left\{h \in G
+: h \cdot (g \cdot x) = g\cdot x \right\}\)</span> and <span
+class="math display">\[G_{g\cdot x} = g G_x g^{-1}\]</span></em></p>
+</div>
+<div class="theorem">
+<p><strong>Theorem 20</strong> (). <em>A group action that is not
+faithful is also not free.</em></p>
+</div>
+<div class="theorem">
+<p><strong>Theorem 21</strong> (). <em>For every non-empty <span
+class="math inline">\(S \subseteq G\)</span>, <span
+class="math display">\[\mathrm{C}_G(S) = \mathrm{C}_G(\langle S \rangle)
+\leq G\]</span></em></p>
+</div>
+<div class="theorem">
+<p><strong>Theorem 22</strong> (Orbit-stabilizer theorem). <em>Let <span
+class="math inline">\(G \curvearrowright X\)</span> and <span
+class="math inline">\(x \in X\)</span>. The map <span
+class="math inline">\(\phi : \operatorname{Orb}{(x)} \rightarrow
+G/G_x\)</span> defined by <span class="math inline">\(g \cdot [x]
+\mapsto g G_x\)</span> is a bijection.</em></p>
+</div>
+<div class="theorem">
+<p><strong>Theorem 23</strong> (Class equation). <em>Let <span
+class="math inline">\(G\)</span> be a finite group and let <span
+class="math inline">\(g_1, g_2, \dots, g_n\)</span> be representatives
+of the distinct conjugacy classes not included in <span
+class="math inline">\(Z(G)\)</span>. Then <span
+class="math display">\[\lvert G \rvert = \lvert \mathrm{Z}(G) \rvert +
+\sum_{i}^n \lvert \mathrm{C}_{g_i} \rvert\]</span></em></p>
+</div>
+<div class="theorem">
+<p><strong>Theorem 24</strong> (). <em><span
+class="math inline">\(H\)</span> is a finite subgroup if and only if
+<span class="math inline">\([G:H] &lt; \infty\)</span>.</em></p>
+</div>
+<div class="theorem">
+<p><strong>Theorem 25</strong> (). <em>Let <span
+class="math inline">\(p\)</span> be a prime number and <span
+class="math inline">\(G\)</span> be a group with <span
+class="math inline">\(\lvert G \rvert = p^m\)</span> for some <span
+class="math inline">\(m\)</span>. Then <span
+class="math inline">\(\mathrm{Z}(G) \neq \{e\}\)</span>.</em></p>
+</div>
+<div class="theorem">
+<p><strong>Theorem 26</strong> (). <em>If <span
+class="math inline">\(\lvert G \rvert = p^2\)</span>, then <span
+class="math inline">\(G\)</span> is abelian.</em></p>
+</div>
+<div class="theorem">
+<p><strong>Theorem 27</strong> (). <em>If <span
+class="math inline">\(\lvert G \rvert = p^2\)</span>, either <span
+class="math inline">\(G = \mathbb{Z}_{p^2}\)</span> or <span
+class="math inline">\(G = \mathrm{Z}_p \times
+\mathbb{Z}_p\)</span>.</em></p>
+</div>
+<div class="theorem">
+<p><strong>Theorem 28</strong> (). <em>Let <span
+class="math inline">\(G\)</span> be a group generated by a non-empty
+symmetric set <span class="math inline">\(S \subseteq G\)</span>. <span
+class="math display">\[G = \displaystyle \bigcup_{n \in \mathbb{N}}
+B_n\]</span></em></p>
+</div>
+<div class="theorem">
+<p><strong>Theorem 29</strong> (). <em>Let <span
+class="math inline">\(G\)</span> be a group generated by a non-empty
+symmetric set <span class="math inline">\(S \subseteq G\)</span>. If
+<span class="math inline">\(S\)</span> is finite, then <span
+class="math inline">\(G\)</span> is countable.</em></p>
+</div>
+<div class="theorem">
+<p><strong>Theorem 30</strong> (). <em>If <span
+class="math inline">\(G\)</span> is an infinite cyclic group, then <span
+class="math inline">\(G \cong \mathbb{Z}\)</span>.</em></p>
+</div>
+<div class="theorem">
+<p><strong>Theorem 31</strong> (). <em>If <span
+class="math inline">\(G\)</span> is finite cyclic group, then <span
+class="math inline">\(G \cong \mathbb{Z}_n\)</span> and <span
+class="math inline">\(\lvert G \rvert = n\)</span>.</em></p>
+</div>
+<div class="theorem">
+<p><strong>Theorem 32</strong> (). <em>If <span
+class="math inline">\(G\)</span> is an abelian group and is generated by
+<span class="math inline">\(\left\{g_1, g_2, \dots,
+g_n\right\}\)</span>, then the map <span class="math inline">\(\phi :
+\mathbb{Z}^n \rightarrow G\)</span> by <span class="math inline">\((k_1,
+k_2, \dots k_n) \mapsto g_1^{k_1}g_2^{k_2}\cdots g_n^{k_n}\)</span> is a
+surjective homomorphism. Thus by the first isomorphism theorem, <span
+class="math inline">\(G \cong \mathbb{Z}^n /
+\operatorname{ker}{(\phi)}\)</span>.</em></p>
+</div>
+<div class="theorem">
+<p><strong>Theorem 33</strong> (). <em>Let <span class="math inline">\(n
+\in \mathbb{N}\)</span> and <span class="math inline">\(H \leq
+\mathbb{Z}^n\)</span>. Then there are <span class="math inline">\(g_1,
+g_2, \dots, g_n \in \mathbb{Z}^n\)</span> and <span
+class="math inline">\(h_1, h_2, \dots, h_n \in H\)</span> such
+that</em></p>
+<ul>
+<li><p><em><span class="math inline">\(\mathbb{Z}^n \cong \langle g_1
+\rangle \times \langle g_2 \rangle \times \cdots \times \langle g_n
+\rangle\)</span></em></p></li>
+<li><p><em><span class="math inline">\(H \cong \langle h_1 \rangle
+\times \langle h_2 \rangle \times \cdots \times \langle h_n
+\rangle\)</span></em></p></li>
+</ul>
+<p><em>where each <span class="math inline">\(h_i \in \langle g_i
+\rangle\)</span> for all <span class="math inline">\(i = 1, 2, \dots,
+n\)</span>.</em></p>
+</div>
+<div class="theorem">
+<p><strong>Theorem 34</strong> (universal property of the free group).
+<em>Let <span class="math inline">\(G\)</span> be a group, <span
+class="math inline">\(S\)</span> be a non-empty set, and <span
+class="math inline">\(f : S \rightarrow G\)</span> be any function. Then
+there exists a unique group homomorphism <span
+class="math inline">\(\phi : \mathcal{F}_S \rightarrow G\)</span> such
+that <span class="math inline">\(\phi(s) = f(s)\)</span> for all <span
+class="math inline">\(s\in S\)</span>.</em></p>
+</div>
+<div class="theorem">
+<p><strong>Theorem 35</strong> (). <em>If <span
+class="math inline">\(S_1, S_2\)</span> are non-empty sets with the same
+cardinality, then <span class="math inline">\(\mathcal{F}_{S_1} \cong
+\mathcal{F}_{S_2}\)</span>.</em></p>
+</div>
+<div class="theorem">
+<p><strong>Theorem 36</strong> (). <em><span
+class="math inline">\(\mathcal{F}_2 \ncong
+\mathcal{F}_3\)</span></em></p>
+</div>
+<div class="theorem">
+<p><strong>Theorem 37</strong> (). <em>Every group is a quotient of a
+free group.</em></p>
+</div>
+<div class="theorem">
+<p><strong>Theorem 38</strong> (). <em>Let <span class="math inline">\(H
+\trianglelefteq G\)</span>. Define <span class="math inline">\(\pi : G
+\rightarrow G/H\)</span> by <span class="math inline">\(\pi(g) =
+gH\)</span>. <span class="math inline">\(\pi\)</span> is a surjective
+homomorphism and <span class="math inline">\(\operatorname{ker}{(\pi)} =
+H\)</span>.</em></p>
+</div>
+<h1 id="rings">Rings</h1>
+<h2 id="definitions-1">Definitions</h2>
+<h4 id="ring">ring</h4>
+<p>A <strong>ring</strong> <span class="math inline">\(R\)</span> is a
+set together with two binary operations, <span
+class="math inline">\(+\)</span> and <span
+class="math inline">\(\cdot\)</span> such that</p>
+<ol>
+<li><p><span class="math inline">\((R,+)\)</span> is an abelian
+group</p></li>
+<li><p><span class="math inline">\(\cdot\)</span> is associative: for
+all <span class="math inline">\(a,b,c \in R\)</span>, <span
+class="math inline">\((a \cdot b) \cdot c = a \cdot (b \cdot
+c)\)</span></p></li>
+<li><p>for all <span class="math inline">\(a,b,c \in R\)</span>, <span
+class="math inline">\(a \cdot (b + c) = a \cdot b + a \cdot c\)</span>
+and <span class="math inline">\((a +b)\cdot c = a \cdot c + b \cdot
+c\)</span>.</p></li>
+</ol>
+<h4 id="commutative">commutative</h4>
+<p>Let <span class="math inline">\((R,+,\cdot)\)</span> be a ring. <span
+class="math inline">\(R\)</span> is <strong>commutative</strong> if and
+only if for all <span class="math inline">\(a,b \in R\)</span>, <span
+class="math inline">\(a \cdot b = b \cdot a\)</span>.</p>
+<h4 id="unital">unital</h4>
+<p>Let <span class="math inline">\((R,+,\cdot)\)</span> be a ring. <span
+class="math inline">\(R\)</span> is <strong>unital</strong> if and only
+if there exists <span class="math inline">\(\mathbf{1} \in R\)</span>,
+<span class="math inline">\(\mathbf{0} \neq \mathbf{1}\)</span> such
+that for all <span class="math inline">\(a \in R\)</span>, <span
+class="math inline">\(a \cdot \mathbf{1} = \mathbf{1} \cdot a =
+a\)</span>.</p>
+<h4 id="zero-divisor">zero divisor</h4>
+<p>Let <span class="math inline">\(R\)</span> be a ring. A non-zero
+element <span class="math inline">\(a \in R\)</span> is a <strong>zero
+divisor</strong> if and only if there exists <span
+class="math inline">\(b \in R\)</span> such that <span
+class="math inline">\(b \neq 0\)</span> and <span
+class="math inline">\(ab = 0\)</span>.</p>
+<h4 id="unit">unit</h4>
+<p>Let <span class="math inline">\(R\)</span> be a unital ring. A
+non-zero element <span class="math inline">\(a \in R\)</span> is a
+<strong>unit</strong> if and only if there exists <span
+class="math inline">\(b\in R\)</span> such that <span
+class="math inline">\(ab = ba = 1\)</span>. The set of all units of
+<span class="math inline">\(R\)</span> is denoted <span
+class="math inline">\(R^\times\)</span>.</p>
+<h4 id="integral-domain">integral domain</h4>
+<p>An <strong>integral domain</strong> is a commutative unital ring
+<span class="math inline">\(R\)</span> that has no zero divisors.</p>
+<h4 id="division-ring">division ring</h4>
+<p>A <strong>division ring</strong> is a unital ring <span
+class="math inline">\(R\)</span> such that <span
+class="math inline">\(R^\times = R \setminus \{0\}\)</span>.</p>
+<h4 id="field">field</h4>
+<p>A <strong>field</strong> is a commutative division ring.</p>
+<h4 id="ring-homomorphism">ring homomorphism</h4>
+<p>let <span class="math inline">\(R,S\)</span> be rings. A map <span
+class="math inline">\(\phi: R \rightarrow S\)</span> is a <strong>ring
+homormophism</strong> if and only if for all <span
+class="math inline">\(a,b \in R\)</span>,</p>
+<ol>
+<li><p><span class="math inline">\(\phi(a + b) = \phi(a) +
+\phi(b)\)</span></p></li>
+<li><p><span class="math inline">\(\phi(ab) =
+\phi(a)\phi(b)\)</span></p></li>
+</ol>
+<p>A bijective ring homomorphism is a <strong>ring isomorphism</strong>.
+The <strong>kernel</strong> of <span class="math inline">\(\phi\)</span>
+is <span class="math inline">\(\operatorname{ker}{(\phi)} \coloneqq
+\left\{a \in R \mid \phi(a) = 0\right\}\)</span>.</p>
+<h4 id="subring">subring</h4>
+<p>Let <span class="math inline">\(R\)</span> be a ring and <span
+class="math inline">\(S\)</span> be a non-empty subset of R. <span
+class="math inline">\(S\)</span> is a subring of <span
+class="math inline">\(R\)</span> if and only if it is a subgroup of
+<span class="math inline">\((R,+)\)</span> that is closed under
+multiplication. This is denoted <span class="math inline">\(S \leq
+R\)</span>.</p>
+<h4 id="ideal">ideal</h4>
+<p>Let <span class="math inline">\(R\)</span> be a ring and <span
+class="math inline">\(I \subseteq R\)</span> be non-empty. <span
+class="math inline">\(I\)</span> is a <strong>left ideal</strong> of
+<span class="math inline">\(R\)</span> if and only if for all <span
+class="math inline">\(a,b \in I, r\in R\)</span>,</p>
+<ol>
+<li><p><span class="math inline">\(a-b \in I\)</span></p></li>
+<li><p><span class="math inline">\(ra \in I\)</span></p></li>
+</ol>
+<p>A <strong>right ideal</strong> is defined similarly, with <span
+class="math inline">\(ra \in I\)</span>. A <strong>two-sided
+ideal</strong> has <span class="math inline">\(ra, ar \in I\)</span>. In
+commutative rings, the three are the same.</p>
+<h4 id="quotient-ring">quotient ring</h4>
+<p>Let <span class="math inline">\(I\)</span> be an ideal of <span
+class="math inline">\(R\)</span>. The <strong>quotient ring</strong> is
+the coset space <span class="math inline">\(R/I \coloneqq \left\{r + I
+\mid r \in R \right\}\)</span> with the operations</p>
+<ol>
+<li><p><span class="math inline">\((r_1 + I) + (r_2 + I) \coloneqq (r_1
++ r_2) + I\)</span></p></li>
+<li><p><span class="math inline">\((r_1 + I) \cdot (r_2 + I) \coloneqq
+(r_1 \cdot r_2) + I\)</span>.</p></li>
+</ol>
+<h4 id="trivial-ideal">trivial ideal</h4>
+<p>The trivial ideals are <span class="math inline">\(\{0\}\)</span> and
+<span class="math inline">\(R\)</span>.</p>
+<h4 id="ideal-generated-by-a-set">ideal generated by a set</h4>
+<p>Let <span class="math inline">\(R\)</span> be a ring and let <span
+class="math inline">\(E\)</span> be a non-empty subset of <span
+class="math inline">\(R\)</span>. The <strong>ideal generated by <span
+class="math inline">\(E\)</span></strong>, denoted <span
+class="math inline">\(\langle E \rangle\)</span>, is the smallest ideal
+of <span class="math inline">\(R\)</span> that contains <span
+class="math inline">\(E\)</span>. <span class="math display">\[\langle E
+\rangle \coloneqq \bigcap_{E \subseteq I \trianglelefteq R}
+I\]</span></p>
+<h4 id="principal-ideal">principal ideal</h4>
+<p>Let <span class="math inline">\(I\)</span> be an ideal of <span
+class="math inline">\(R\)</span>. If <span
+class="math inline">\(I\)</span> is generated by a single element, then
+<span class="math inline">\(I\)</span> is a <strong>principal
+ideal</strong>.</p>
+<h4 id="prime-ideal">prime ideal</h4>
+<p>Let <span class="math inline">\(R\)</span> be a ring and <span
+class="math inline">\(I\)</span> be an ideal of <span
+class="math inline">\(R\)</span>. <span class="math inline">\(I\)</span>
+is a <strong>prime ideal</strong> if and only if for all <span
+class="math inline">\(a, b \in I\)</span>, if <span
+class="math inline">\(ab \in I\)</span>, then either <span
+class="math inline">\(a \in I\)</span> or <span class="math inline">\(b
+\in I\)</span>.</p>
+<h4 id="maximal-ideal">maximal ideal</h4>
+<p>Let <span class="math inline">\(I\)</span> be an ideal of <span
+class="math inline">\(R\)</span>. <span class="math inline">\(I\)</span>
+is a <strong>maximal ideal</strong> if and only if <span
+class="math inline">\(I \neq R\)</span> and if <span
+class="math inline">\(I \subseteq J \trianglelefteq R\)</span>, then
+either <span class="math inline">\(I = J\)</span> or <span
+class="math inline">\(J = R\)</span>.</p>
+<h4 id="principal-ideal-domain">principal ideal domain</h4>
+<p>An integral domain <span class="math inline">\(R\)</span> is a
+<strong>principal ideal domain</strong> (PID) if and only if every ideal
+in <span class="math inline">\(R\)</span> is principal.</p>
+<h4 id="euclidean-domain">Euclidean domain</h4>
+<p>An integral domain <span class="math inline">\(R\)</span> is a
+<strong>Euclidean domain</strong> (ED) if and only if there exists <span
+class="math inline">\(d: R \setminus \{0\} \rightarrow \mathbb{Z}_{\geq
+0}\)</span> where for all <span class="math inline">\(a,b \in R\)</span>
+and <span class="math inline">\(a \neq 0\)</span>, there exists <span
+class="math inline">\(q, r \in R\)</span> such that <span
+class="math inline">\(b = aq + r\)</span> with either <span
+class="math inline">\(r = 0\)</span> or <span
+class="math inline">\(d(r)&lt; d(a)\)</span>.</p>
+<h4 id="irreducible-element">irreducible element</h4>
+<p>Let <span class="math inline">\(R\)</span> be an integral domain,
+<span class="math inline">\(a \in R\)</span> be non-zero, and <span
+class="math inline">\(a\notin R^\times\)</span>. <span
+class="math inline">\(a\)</span> is <strong>irreducible</strong> if and
+only if whenever <span class="math inline">\(a = bc\)</span> for some
+<span class="math inline">\(b,c \in R\)</span>, then either <span
+class="math inline">\(b \in R^\times\)</span> or <span
+class="math inline">\(c \in R^\times\)</span>. Otherwise, <span
+class="math inline">\(a\)</span> is <strong>reducible</strong></p>
+<h4 id="prime-element">prime element</h4>
+<p>Let <span class="math inline">\(R\)</span> be an integral domain,
+<span class="math inline">\(a \in R\)</span> be non-zero, and <span
+class="math inline">\(a\notin R^\times\)</span>. <span
+class="math inline">\(a\)</span> is <strong>prime</strong> if and only
+if <span class="math inline">\(\langle a \rangle\)</span> is a prime
+ideal.</p>
+<h4 id="unique-factorization-domain">unique factorization domain</h4>
+<p>Let <span class="math inline">\(R\)</span> be an integral domain.
+<span class="math inline">\(R\)</span> is a <strong>unique factorization
+domain</strong> (UFD) if and only if</p>
+<ul>
+<li><p>For every non-zero <span class="math inline">\(r \in R \setminus
+R^\times\)</span>, there exists not necessarily distinct irreducible
+elements <span class="math inline">\(p_1, p_2, \dots p_n \in R\)</span>
+such that <span class="math inline">\(r = p_1p_2\cdots
+p_n\)</span>.</p></li>
+<li><p>The factorization of <span class="math inline">\(r\)</span> is
+unique up to re-ordering and multiplying by invertible
+elements.</p></li>
+</ul>
+<h4 id="field-of-fractions">field of fractions</h4>
+<p>Let <span class="math inline">\(R\)</span> be an integral domain. Let
+<span class="math inline">\(\mathcal{D}\)</span> be the set of all pairs
+<span class="math inline">\((a,b)\)</span> where <span
+class="math inline">\(b \neq 0\)</span> and <span
+class="math inline">\(a,b\in R\)</span>. <span
+class="math display">\[\mathcal{D} = \left\{(a,b) \mid a,b, \in R, b
+\neq 0\right\} = R \times R \setminus \{0\}\]</span> Define the
+following relation on <span class="math inline">\(\mathcal{D}\)</span>
+by <span class="math inline">\((a,b) \sim (c,d)\)</span> if and only if
+<span class="math inline">\(ad = bc\)</span>. This is an equivalence
+relation. Finally, let <span class="math inline">\(\mathbb{F} =
+\mathcal{D}/\sim\)</span>. Define the operations <span
+class="math inline">\(+\)</span> and <span
+class="math inline">\(\cdot\)</span> on <span
+class="math inline">\(\mathbb{F}\)</span> as follows:</p>
+<ol>
+<li><p><span class="math inline">\([(a,b)] + [(c,d)] = [(ad +
+bc,bd)]\)</span></p></li>
+<li><p><span class="math inline">\([(a,b)] \cdot [(c,d)] = [(ac,
+bd)]\)</span></p></li>
+</ol>
+<p>Then <span class="math inline">\((\mathbb{F}, +, \cdot)\)</span> is
+the <strong>field of fractions of <span
+class="math inline">\(R\)</span></strong>.</p>
+<h4 id="polynomial-ring">polynomial ring</h4>
+<p>Let <span class="math inline">\(R\)</span> be a commutative ring. The
+<strong>polynomial ring</strong> over <span
+class="math inline">\(R\)</span> is the set <span
+class="math display">\[R[x] \coloneqq \left\{a_nx^n + a_{n-1}x^{n-1} +
+\cdots + a_1 x + a_0 \mid a_0, a_1, \dots, a_n \in R, a_n \neq
+0\right\}\]</span> with operations blah blah blah <span
+class="math inline">\(R\)</span> can be considered a subring of <span
+class="math inline">\(R[x]\)</span> by considering all the constant
+polynomials. If <span class="math inline">\(f(x) = a_nx^n +
+a_{n-1}x^{n-1} + \cdots + a_1 x + a_0 \in R[x]\)</span> and <span
+class="math inline">\(a_n \neq 0\)</span>, the <strong>degree</strong>
+of <span class="math inline">\(f\)</span> is <span
+class="math inline">\(\deg{(f(x))} \coloneqq n\)</span>.</p>
+<h4 id="evaluation-map">evaluation map</h4>
+<p>Let <span class="math inline">\(R\)</span> be a commutative ring.
+Given <span class="math inline">\(\alpha \in R\)</span>, define <span
+class="math inline">\(e_\alpha : R[x] \rightarrow R\)</span> by <span
+class="math inline">\(e_\alpha (f(x)) = f(\alpha)\)</span>. This is the
+<strong>evaluation map</strong> of <span
+class="math inline">\(\alpha\)</span> and <span
+class="math inline">\(e_\alpha\)</span> is a ring homomorphism. <span
+class="math inline">\(\alpha\)</span> is a <strong>root</strong> of
+<span class="math inline">\(f(x)\)</span> if and only if <span
+class="math inline">\(f(\alpha) = 0\)</span>.</p>
+<h2 id="theorems-1">Theorems</h2>
+<div class="theorem">
+<p><strong>Theorem 39</strong> (). <em>Let <span
+class="math inline">\(R\)</span> be a ring, <span
+class="math inline">\(a,b \in R\)</span>. Then</em></p>
+<ol>
+<li><p><em><span class="math inline">\(a \cdot 0 = 0 \cdot a =
+0\)</span></em></p></li>
+<li><p><em><span class="math inline">\(a(-b) = (-a)b =
+-ab\)</span></em></p></li>
+<li><p><em><span class="math inline">\((-a)(-b) =
+ab\)</span></em></p></li>
+</ol>
+</div>
+<div class="theorem">
+<p><strong>Theorem 40</strong> (). <em>Let <span
+class="math inline">\(R\)</span> be a ring and <span
+class="math inline">\(a, b, c \in R\)</span>. If <span
+class="math inline">\(a\)</span> is not a zero divisor and <span
+class="math inline">\(ab = ac\)</span>, then either <span
+class="math inline">\(a = 0\)</span> or <span class="math inline">\(b =
+c\)</span>.</em></p>
+</div>
+<div class="theorem">
+<p><strong>Theorem 41</strong> (). <em>Cancellation laws hold in any
+integral domain.</em></p>
+</div>
+<div class="theorem">
+<p><strong>Theorem 42</strong> (). <em>All fields are integral
+domains.</em></p>
+</div>
+<div class="theorem">
+<p><strong>Theorem 43</strong> (). <em>If a ring is a subset of a field,
+then the ring is an integral domain.</em></p>
+</div>
+<div class="theorem">
+<p><strong>Theorem 44</strong> (). <em>Every finite integral domain is a
+field.</em></p>
+</div>
+<div class="theorem">
+<p><strong>Theorem 45</strong> (). <em>Let <span
+class="math inline">\(R\)</span> be a ring and <span
+class="math inline">\(S\)</span> be a non-empty subset of <span
+class="math inline">\(R\)</span>. The following are equivalent:</em></p>
+<ol>
+<li><p><em><span class="math inline">\(S \leq R\)</span></em></p></li>
+<li><p><em><span class="math inline">\((S, + ) \leq (R, +)\)</span> and
+<span class="math inline">\(S\)</span> is closed under
+multiplication.</em></p></li>
+<li><p><em>For all <span class="math inline">\(a,b, \in S\)</span>,
+<span class="math inline">\(a-b \in S\)</span> and <span
+class="math inline">\(ab \in S\)</span>.</em></p></li>
+</ol>
+</div>
+<div class="theorem">
+<p><strong>Theorem 46</strong> (). <em>Let <span
+class="math inline">\(R,S\)</span> be rings and let <span
+class="math inline">\(\phi: R \rightarrow S\)</span> be a ring
+homomorphism. Then <span
+class="math inline">\(\operatorname{ker}{(\phi)}\)</span> is a subring
+of <span class="math inline">\(R\)</span>.</em></p>
+</div>
+<div class="theorem">
+<p><strong>Theorem 47</strong> (). <em>The intersection of subrings is a
+subring. The intersection of ideals is an ideal.</em></p>
+</div>
+<div class="theorem">
+<p><strong>Theorem 48</strong> (). <em>Let <span
+class="math inline">\(S_1, S_2\)</span> be subrings of <span
+class="math inline">\(R\)</span>. <span class="math inline">\(S_1 \cup
+S_2\)</span> is a subring of <span class="math inline">\(R\)</span> if
+and only if <span class="math inline">\(S_1 \subseteq S_2\)</span> or
+<span class="math inline">\(S_2 \subseteq S_1\)</span>. Analogous for
+ideals.</em></p>
+</div>
+<div class="theorem">
+<p><strong>Theorem 49</strong> (). <em>Let <span
+class="math inline">\(R\)</span> be a unital ring and let <span
+class="math inline">\(I\)</span> be an ideal of <span
+class="math inline">\(R\)</span>. Then <span class="math inline">\(I =
+R\)</span> if and only if <span class="math inline">\(1 \in
+I\)</span>.</em></p>
+</div>
+<div class="theorem">
+<p><strong>Theorem 50</strong> (). <em>Let <span
+class="math inline">\(R\)</span> be a ring and <span
+class="math inline">\(E\)</span> be a non-empty subset of <span
+class="math inline">\(R\)</span>. The left ideal generated by <span
+class="math inline">\(E\)</span> is <span class="math display">\[\langle
+E \rangle = \left\{ \sum_{i=1}^n r_ia_i \mid r_i \in R, a_i \in E, n \in
+\mathbb{N} \ \text{for all} \ i = 1, 2, \dots,
+n\right\}\]</span></em></p>
+</div>
+<div class="theorem">
+<p><strong>Theorem 51</strong> (). <em>If <span class="math inline">\(I
+= \langle a \rangle\)</span>, then it is the smallest ideal containing
+<span class="math inline">\(a\)</span>.</em></p>
+</div>
+<div class="theorem">
+<p><strong>Theorem 52</strong> (). <em>Let <span
+class="math inline">\(R\)</span> be a commutative unital ring. Then
+<span class="math inline">\(R\)</span> is a field if and only if <span
+class="math inline">\(\{0\}\)</span> and <span
+class="math inline">\(R\)</span> are the only ideals of <span
+class="math inline">\(R\)</span>.</em></p>
+</div>
+<div class="theorem">
+<p><strong>Theorem 53</strong> (). <em>Let <span
+class="math inline">\(\phi : R \rightarrow S\)</span> be a ring
+homomorphism. Then <span
+class="math inline">\(\operatorname{ker}{(\phi)} \trianglelefteq
+R\)</span>.</em></p>
+</div>
+<div class="theorem">
+<p><strong>Theorem 54</strong> (). <em>Let <span
+class="math inline">\(\phi : R \rightarrow S\)</span> be a ring
+homomorphism. Then <span class="math inline">\(\phi\)</span> is
+injective if and only if <span
+class="math inline">\(\operatorname{ker}{(\phi)} =
+\{0\}\)</span>.</em></p>
+</div>
+<div class="theorem">
+<p><strong>Theorem 55</strong> (). <em>Let <span
+class="math inline">\(\mathbb{F}\)</span> be a field. Any non-zero ring
+homomorphism from <span class="math inline">\(\mathbb{F}\)</span> into
+any ring is injective.</em></p>
+</div>
+<div class="theorem">
+<p><strong>Theorem 56</strong> (). <em>Let <span
+class="math inline">\(I\)</span> be an ideal of <span
+class="math inline">\(C([0,1])\)</span>. <span
+class="math inline">\(I\)</span> is maximal if and only if there exists
+<span class="math inline">\(c \in [0,1]\)</span> such that <span
+class="math inline">\(I = I_c = \left\{f \in C([0,1]) \mid f(c) =
+0\right\}\)</span>.</em></p>
+</div>
+<div class="theorem">
+<p><strong>Theorem 57</strong> (). <em>Let <span
+class="math inline">\(R\)</span> be a unital ring. Every proper ideal is
+contained in a maximal ideal.</em></p>
+</div>
+<div class="theorem">
+<p><strong>Theorem 58</strong> (). <em>Let <span
+class="math inline">\(R\)</span> be a commutative unital ring and let
+<span class="math inline">\(I\)</span> be an ideal of <span
+class="math inline">\(R\)</span>. Then <span
+class="math inline">\(I\)</span> is a prime ideal if and only if <span
+class="math inline">\(R/I\)</span> is an integral domain.</em></p>
+</div>
+<div class="theorem">
+<p><strong>Theorem 59</strong> (). <em>Let <span
+class="math inline">\(R\)</span> be a commutative unital ring and let
+<span class="math inline">\(I\)</span> be an ideal of <span
+class="math inline">\(R\)</span>. Then <span
+class="math inline">\(I\)</span> is a maximal ideal if and only if <span
+class="math inline">\(R/I\)</span> is a field.</em></p>
+</div>
+<div class="theorem">
+<p><strong>Theorem 60</strong> (). <em>Let <span
+class="math inline">\(R\)</span> be a commutative unital ring. Every
+maximal ideal is a prime ideal.</em></p>
+</div>
+<div class="theorem">
+<p><strong>Theorem 61</strong> (). <em>Let <span class="math inline">\(I
+\trianglelefteq R\)</span>. If <span class="math inline">\(I
+\trianglelefteq J \trianglelefteq R\)</span>, then <span
+class="math inline">\(J/I \trianglelefteq R/I\)</span>. Conversely, if
+<span class="math inline">\(\tilde{J} \trianglelefteq R/I\)</span>,
+there exists <span class="math inline">\(J \trianglelefteq R\)</span>
+such that <span class="math inline">\(I \trianglelefteq J\)</span> and
+<span class="math inline">\(\tilde{J} = J/I\)</span></em></p>
+</div>
+<div class="theorem">
+<p><strong>Theorem 62</strong> (). <em>Every ideal of <span
+class="math inline">\(\mathbb{R}[x]\)</span> is principal.</em></p>
+</div>
+<div class="theorem">
+<p><strong>Theorem 63</strong> (). <em>Every Euclidean domain is a
+principal ideal domain.</em></p>
+</div>
+<div class="theorem">
+<p><strong>Theorem 64</strong> (). <em>Let <span
+class="math inline">\(R\)</span> be an integral domain and let <span
+class="math inline">\(a, b \in R\)</span>. Then <span
+class="math inline">\(\langle a \rangle  = \langle b \rangle\)</span> if
+and only if <span class="math inline">\(b = au\)</span> for some <span
+class="math inline">\(u \in R^\times\)</span>.</em></p>
+</div>
+<div class="theorem">
+<p><strong>Theorem 65</strong> (). <em>In any integral domain, every
+prime element is irreducible.</em></p>
+</div>
+<div class="theorem">
+<p><strong>Theorem 66</strong> (). <em>In any principal ideal domain,
+every irreducible element is prime.</em></p>
+</div>
+<div class="theorem">
+<p><strong>Theorem 67</strong> (). <em>Every principal ideal domain is a
+unique factorization domain.</em></p>
+</div>
+<div class="theorem">
+<p><strong>Theorem 68</strong> (). <em><span
+class="math inline">\(\mathbb{R}[X]\)</span> is a unique factorization
+domain.</em></p>
+</div>
+<div class="theorem">
+<p><strong>Theorem 69</strong> (Fundeamental theorem of arithmetic).
+<em><span class="math inline">\(\mathbb{Z}\)</span> is a unique
+factorization domain.</em></p>
+</div>
+<div class="theorem">
+<p><strong>Theorem 70</strong> (). <em>Let <span
+class="math inline">\(R\)</span> be a principal ideal domain and <span
+class="math inline">\(I_1 \subseteq I_2 \subseteq \cdots \subseteq
+I_n\)</span> be an increasing sequnce of ideals of <span
+class="math inline">\(R\)</span>. Then there exists <span
+class="math inline">\(N \in \mathbb{N}\)</span> such that for all <span
+class="math inline">\(n \geq N, I_n = I_N\)</span>.</em></p>
+</div>
+<div class="theorem">
+<p><strong>Theorem 71</strong> (). <em>Let <span
+class="math inline">\(R\)</span> be a principal ideal domain and let
+<span class="math inline">\(a \in R \setminus R^\times\)</span>. Then
+there are <span class="math inline">\(b,q \in R\)</span> such that <span
+class="math inline">\(a = bq\)</span> and <span
+class="math inline">\(b\)</span> is irreducible.</em></p>
+</div>
+<div class="theorem">
+<p><strong>Theorem 72</strong> (). <em>Let <span
+class="math inline">\(R\)</span> be an integral domain, <span
+class="math inline">\(a \in R\)</span>, <span class="math inline">\(u
+\in R^\times\)</span>. Then <span class="math inline">\(au\)</span> is
+irreducible if and only if <span class="math inline">\(a\)</span> is
+irreducible and <span class="math inline">\(au\)</span> is prime if and
+only if <span class="math inline">\(a\)</span> is prime.</em></p>
+</div>
+<div class="theorem">
+<p><strong>Theorem 73</strong> (). <em>The operations on the field of
+fractions are well defined.</em></p>
+</div>
+<div class="theorem">
+<p><strong>Theorem 74</strong> (). <em>Let <span
+class="math inline">\(R\)</span> be an integral domain and <span
+class="math inline">\(\mathbb{F}\)</span> its field of fractions. The
+map <span class="math inline">\(\phi: R \rightarrow \mathbb{F}\)</span>
+by <span class="math inline">\(\phi(r) \coloneqq [(r,1)]\)</span> is an
+injective ring homomorphism. Furthermore, <span
+class="math inline">\((R,1)\)</span> is a subring of <span
+class="math inline">\(\mathbb{F}\)</span>.</em></p>
+</div>
+<div class="theorem">
+<p><strong>Theorem 75</strong> (). <em>Let <span
+class="math inline">\(R\)</span> be an integral domain.</em></p>
+<ol>
+<li><p><em>If <span class="math inline">\(p(x), q(x) \in R[x]\)</span>
+are both non-zero, then <span class="math inline">\(\deg{(p(x)q(x))} =
+\deg{(p(x))} + \deg{(q(x))}\)</span>.</em></p></li>
+<li><p><em><span class="math inline">\(\left(R[X]\right)^\times =
+R^\times\)</span>.</em></p></li>
+<li><p><em><span class="math inline">\(R[X]\)</span> is an integral
+domain.</em></p></li>
+</ol>
+</div>
+<div class="theorem">
+<p><strong>Theorem 76</strong> (). <em>If <span
+class="math inline">\(\mathbb{F}\)</span> is a field, then <span
+class="math inline">\(\mathbb{F}[x]\)</span> is a Euclidean domain with
+respect to degree. Moreover, it is a principal ideal domain, and thus
+also a unique factorization domain.</em></p>
+</div>
+<div class="theorem">
+<p><strong>Theorem 77</strong> (). <em>Let <span
+class="math inline">\(R\)</span> be an integral domain. If <span
+class="math inline">\(I \triangleleft R\)</span> then <span
+class="math inline">\(I[x] \triangleleft R[x]\)</span>.</em></p>
+</div>
+<div class="theorem">
+<p><strong>Theorem 78</strong> (). <em>Let <span
+class="math inline">\(R, S\)</span> be integral domains. If <span
+class="math inline">\(\phi:R \rightarrow S\)</span> is a ring
+homomorphism, then the map <span class="math inline">\(\tilde{\phi} :
+R[x] \rightarrow S[x]\)</span> defined by <span
+class="math display">\[\tilde{\phi}\left(a_n x^n + a_{n-1} x^{n-1} +
+\cdots + a_1x + a_0\right) = \phi(a_n)x^n + \phi(a_{n-1})x^{n-1} +
+\cdots + \phi(a_1)x + \phi(a_0)\]</span> is a ring homomorphism and
+<span class="math inline">\(\operatorname{ker}{(\tilde{\phi})} =
+\operatorname{ker}{(\phi)}[x]\)</span>.</em></p>
+</div>
+<div class="theorem">
+<p><strong>Theorem 79</strong> (). <em>If <span
+class="math inline">\(R\)</span> is an integral domain and <span
+class="math inline">\(I\)</span> is a prime ideal of <span
+class="math inline">\(R\)</span>, then <span
+class="math inline">\(I[X]\)</span> is a prime ideal of <span
+class="math inline">\(R[X]\)</span>.</em></p>
+</div>
+<div class="theorem">
+<p><strong>Theorem 80</strong> (). <em>Let <span
+class="math inline">\(\mathbb{F}\)</span> be a field and let <span
+class="math inline">\(p(x) \in \mathbb{F}[x]\)</span>. Then <span
+class="math inline">\(p(x)\)</span> has a factor of degree one if and
+only if <span class="math inline">\(p(x)\)</span> has a root in <span
+class="math inline">\(\mathbb{F}\)</span>.</em></p>
+</div>
+<div class="theorem">
+<p><strong>Theorem 81</strong> (). <em>Let <span
+class="math inline">\(\mathbb{F}\)</span> be a field and let <span
+class="math inline">\(p(x) \in \mathbb{F}[x]\)</span> have degree two or
+three. Then <span class="math inline">\(p(x)\)</span> is reducible if
+and only if it has a root in <span
+class="math inline">\(\mathbb{F}\)</span>.</em></p>
+</div>
+<div class="theorem">
+<p><strong>Theorem 82</strong> (). <em>Let <span
+class="math inline">\(R\)</span> be a unique factorization domain and
+<span class="math inline">\(\mathbb{F}\)</span> its field of fractions.
+If <span class="math inline">\(p(x)\)</span> is reducible in <span
+class="math inline">\(\mathbb{F}[X]\)</span> then it is reducible in
+<span class="math inline">\(R[x]\)</span>.</em></p>
+</div>
+<div class="theorem">
+<p><strong>Theorem 83</strong> (). <em>In a unique factorization domain,
+a nonzero element is prime if and only if it is irreducible.</em></p>
+</div>
+<div class="theorem">
+<p><strong>Theorem 84</strong> (). <em>Let <span
+class="math inline">\(f(x) \in \mathbb{F}[x]\)</span> with <span
+class="math inline">\(\deg{(f(x))} = n\)</span>. Then <span
+class="math inline">\(f\)</span> has at most <span
+class="math inline">\(n\)</span> roots in <span
+class="math inline">\(\mathbb{F}\)</span>.</em></p>
+</div>
+<h1 id="fields">Fields</h1>
+<h2 id="definitions-2">Definitions</h2>
+<h4 id="characteristic">characteristic</h4>
+<p>Let <span class="math inline">\(\mathbb{F}\)</span> be a field. The
+<strong>characteristic</strong> of <span
+class="math inline">\(\mathbb{F}\)</span> denoted <span
+class="math inline">\(\operatorname{ch}{(\mathbb{F})}\)</span>, is the
+smallest natural number <span class="math inline">\(n \in
+\mathbb{N}\)</span> such that <span class="math inline">\(n \cdot 1
+\coloneqq 1 + 1 + \cdots + 1 = 0\)</span>. If no such <span
+class="math inline">\(n\)</span> exists, then <span
+class="math inline">\(\operatorname{ch}{(\mathbb{F})} = 0\)</span>.</p>
+<h4 id="prime-subfield">prime subfield</h4>
+<p>Let <span class="math inline">\(\mathbb{F}\)</span> be a field. The
+<strong>prime subfield</strong> of <span
+class="math inline">\(\mathbb{F}\)</span> is the smallest subfield
+containing <span class="math inline">\(1\)</span>.</p>
+<h4 id="field-extension">field extension</h4>
+<p>Let <span class="math inline">\(\mathbb{K}\)</span> be a field and
+let <span class="math inline">\(\mathbb{F}\)</span> be a subfield of
+<span class="math inline">\(\mathbb{K}\)</span>. Then <span
+class="math inline">\(\mathbb{K}\)</span> is an <strong>extension
+field</strong> of <span class="math inline">\(\mathbb{F}\)</span> and
+<span class="math inline">\(\mathbb{K} \backslash \mathbb{F}\)</span> is
+called a <strong>field extension</strong>.</p>
+<h4 id="index-of-a-field-extension">index of a field extension</h4>
+<p>Let <span class="math inline">\(\mathbb{K} \backslash
+\mathbb{F}\)</span>. The <strong>index of <span
+class="math inline">\(\mathbb{K}\)</span> over <span
+class="math inline">\(\mathbb{F}\)</span></strong>, denoted <span
+class="math inline">\([\mathbb{K} : \mathbb{F}]\)</span>, is the
+dimension of <span class="math inline">\(\mathbb{K}\)</span> as a vector
+space over <span class="math inline">\(\mathbb{F}\)</span>.</p>
+<h4 id="finite-extension">finite extension</h4>
+<p><span class="math inline">\(\mathbb{K}\)</span> is a <strong>finite
+extension</strong> of <span class="math inline">\(\mathbb{F}\)</span> if
+<span class="math inline">\([\mathbb{K} : \mathbb{F}] &lt;
+\infty\)</span>.</p>
+<h4 id="subfield-generated-by-a-subset">subfield generated by a
+subset</h4>
+<p>Let <span class="math inline">\(\mathbb{K}\)</span> be an extension
+of <span class="math inline">\(\mathbb{F}\)</span> and let <span
+class="math inline">\(\alpha_1, \alpha_2, \dots \in \mathbb{K}\)</span>
+be a collection of elements of <span
+class="math inline">\(\mathbb{K}\)</span>. Then the smallest subfield of
+<span class="math inline">\(\mathbb{K}\)</span> containing both <span
+class="math inline">\(\mathbb{F}\)</span> and the elements <span
+class="math inline">\(\alpha_1, \alpha_2, \dots\)</span> is the
+<strong>field generated by <span class="math inline">\(\alpha_1,
+\alpha_2, \dots\)</span> over <span
+class="math inline">\(\mathbb{F}\)</span></strong>. It is denoted <span
+class="math inline">\(\mathbb{F}(\alpha_1, \alpha_2,
+\dots)\)</span>.</p>
+<h4 id="algebraic-element">algebraic element</h4>
+<p>Let <span class="math inline">\(\mathbb{K}\)</span> be a field
+extension of <span class="math inline">\(\mathbb{F}\)</span>. An element
+<span class="math inline">\(\alpha \in \mathbb{K}\)</span> is
+<strong>algebraic over <span
+class="math inline">\(\mathbb{F}\)</span></strong> if and only if there
+exists <span class="math inline">\(f(x) \in \mathbb{F}[x]\)</span> such
+that <span class="math inline">\(f(\alpha) = 0\)</span>. If <span
+class="math inline">\(\alpha\)</span> is not algebraic over <span
+class="math inline">\(\mathbb{F}\)</span>, then <span
+class="math inline">\(\alpha\)</span> is <strong>transcendental over
+<span class="math inline">\(\mathbb{F}\)</span></strong>.</p>
+<h4 id="algebraic-extension">algebraic extension</h4>
+<p>An extension <span class="math inline">\(\mathbb{K} \backslash
+\mathbb{F}\)</span> is an <strong>algebraic extension</strong> if and
+only if every <span class="math inline">\(\alpha \in \mathbb{K}\)</span>
+is algebraic over <span class="math inline">\(\mathbb{F}\)</span>.</p>
+<h4 id="splitting-field">splitting field</h4>
+<p>Let <span class="math inline">\(f(x) \in \mathbb{F}[x]\)</span>. A
+field extension <span class="math inline">\(\mathbb{K} \backslash
+\mathbb{F}\)</span> is a <strong>splitting field</strong> for <span
+class="math inline">\(f(x)\)</span> if and only if <span
+class="math inline">\(f(x)\)</span> is completely split into the product
+of linear factors in <span class="math inline">\(\mathbb{K}[x]\)</span>.
+In other words, there are <span class="math inline">\(\alpha_0,
+\alpha_1, \alpha_2, \dots, \alpha_n \in \mathbb{K}\)</span> such
+that</p>
+<ol>
+<li><p><span class="math inline">\(f(x) = \alpha_0(x - \alpha_1)(x -
+\alpha_2)\cdots (x-\alpha_n)\)</span></p></li>
+<li><p><span class="math inline">\(f(x)\)</span> does not completely
+split over any proper subfield of <span
+class="math inline">\(\mathbb{K}\)</span> that contains <span
+class="math inline">\(\mathbb{F}\)</span>.</p></li>
+</ol>
+<p>In other other words, <span class="math display">\[\mathbb{K} =
+\mathbb{F}\left(\alpha_0, \alpha_1, \alpha_2, \dots,
+\alpha_n\right)\]</span></p>
+<h4 id="algebraic-closure">algebraic closure</h4>
+<p>Let <span class="math inline">\(\mathbb{K} \backslash
+\mathbb{F}\)</span> be a field extension. <span
+class="math inline">\(\mathbb{K}\)</span> is the <strong>algebraic
+closure</strong> of <span class="math inline">\(\mathbb{F}\)</span> if
+and only if <span class="math inline">\(\mathbb{K} \backslash
+\mathbb{F}\)</span> is an algebraic extension and every polynomial <span
+class="math inline">\(f(x) \in \mathbb{F}[x]\)</span> splits completely
+into linear factors in <span
+class="math inline">\(\mathbb{K}[x]\)</span>.</p>
+<h4 id="algebriacally-closed">algebriacally closed</h4>
+<p>A field <span class="math inline">\(\mathbb{K}\)</span> is
+<strong>algebraically closed</strong> if and only every every polynomial
+<span class="math inline">\(f(x) \in \mathbb{K}[x]\)</span> has a root
+in <span class="math inline">\(\mathbb{K}\)</span>.</p>
+<h4 id="field-automorphism">field automorphism</h4>
+<p>Let <span class="math inline">\(\mathbb{K} \backslash
+\mathbb{F}\)</span> be a field extension. A field isomorphism <span
+class="math inline">\(\phi : \mathbb{K} \rightarrow \mathbb{K}\)</span>
+is an <strong>automorphism</strong> of <span
+class="math inline">\(\mathbb{K}\)</span>. The set of all automorphisms
+is denoted <span
+class="math inline">\(\mathrm{Aut}{(\mathbb{K})}\)</span>. In
+particular, let <span class="math display">\[\mathrm{Aut}{(\mathbb{K}
+\backslash \mathbb{F})} \coloneqq \left\{\phi \in
+\mathrm{Aut}{(\mathbb{K})} \mid \phi(a) = a \ \text{for all} \ a \in
+\mathbb{F} \right\}\]</span> This the set of all automorphisms of <span
+class="math inline">\(\mathbb{K}\)</span> that fix <span
+class="math inline">\(\mathbb{F}\)</span>.</p>
+<h4 id="fixed-field">fixed field</h4>
+<p>Let <span class="math inline">\(H \leq
+\mathrm{Aut}{(\mathbb{K})}\)</span>. The set <span
+class="math inline">\(\mathrm{Fix}{(H)} \coloneqq \left\{\alpha \in
+\mathbb{K} \mid \sigma(\alpha) = \alpha \ \text{for all} \ \sigma \in H
+\right\}\)</span> is a subfield of <span
+class="math inline">\(\mathbb{K}\)</span> called the <strong>fixed field
+of <span class="math inline">\(H\)</span></strong>.</p>
+<h4 id="separable">separable</h4>
+<p>Let <span class="math inline">\(f(x) \in \mathbb{F}[x]\)</span> and
+let <span class="math inline">\(\mathbb{K}\)</span> be the splitting
+field of <span class="math inline">\(f(x)\)</span> over <span
+class="math inline">\(\mathbb{F}\)</span>. Then for some <span
+class="math inline">\(\alpha_0, \alpha_1, \alpha_2, \dots, \alpha_k \in
+\mathbb{K}\)</span>, <span class="math inline">\(f(x) = \alpha_0(x -
+\alpha_1)^{n_1}(x - \alpha_2)^{n_2}\cdots (x-\alpha_k)^{n_k}\)</span>. A
+root <span class="math inline">\(\alpha_i\)</span> is a <strong>multiple
+root</strong> if <span class="math inline">\(n_i &gt; 1\)</span>. <span
+class="math inline">\(f(x)\)</span> is <strong>separable</strong> if it
+has no multiple roots.</p>
+<h4 id="character-of-a-group">character of a group</h4>
+<blockquote>
+<p>A <strong>character of a group</strong> <span
+class="math inline">\(G\)</span> with values in a field <span
+class="math inline">\(\mathbb{F}\)</span> is a homomorphism <span
+class="math inline">\(\chi\)</span> from <span
+class="math inline">\(G\)</span> to the multiplicative group of <span
+class="math inline">\(\mathbb{F}\)</span>. <span
+class="math display">\[\chi : G \rightarrow
+\mathbb{F}^\times\]</span></p>
+</blockquote>
+<h4 id="galois-extension">Galois extension</h4>
+<p>Let <span class="math inline">\(\mathbb{K} \backslash
+\mathbb{F}\)</span> be a field extension. <span
+class="math inline">\(\mathbb{K} \backslash \mathbb{F}\)</span> is a
+<strong>Galois extension</strong> if and only if <span
+class="math inline">\(\lvert \mathrm{Aut}{(\mathbb{K}\backslash
+\mathbb{F})} \rvert = [\mathbb{K}:\mathbb{F}]\)</span>. In this case
+<span class="math inline">\(\mathrm{Gal}{(\mathbb{K}\backslash
+\mathbb{F})} = \mathrm{Aut}{(\mathbb{K}\backslash \mathbb{F})}\)</span>
+is the <strong>Galois group</strong>.</p>
+<h2 id="theorems-2">Theorems</h2>
+<div class="theorem">
+<p><strong>Theorem 85</strong> (). <em><span
+class="math inline">\(\mathrm{ch}(\mathbb{F})\)</span> is either 0 or a
+prime number.</em></p>
+</div>
+<div class="theorem">
+<p><strong>Theorem 86</strong> (). </p>
+<ul>
+<li><p><em>If <span class="math inline">\(\mathrm{ch}(\mathbb{F}) =
+0\)</span>, the prime subfield of <span
+class="math inline">\(\mathbb{F}\)</span> is isomorphic to <span
+class="math inline">\(\mathbb{Q}\)</span>.</em></p></li>
+<li><p><em>If <span class="math inline">\(\mathrm{ch}(\mathbb{F}) =
+p\)</span>, where <span class="math inline">\(p\)</span> is prime, the
+prime subfield of <span class="math inline">\(\mathbb{F}\)</span> is
+isomorphic to <span
+class="math inline">\(\mathbb{Z}_p\)</span>.</em></p></li>
+</ul>
+</div>
+<div class="theorem">
+<p><strong>Theorem 87</strong> (). <em>Let <span
+class="math inline">\(\mathbb{F}\)</span> be a field and <span
+class="math inline">\(f(x) \in \mathbb{F}[x]\)</span>. Then there exists
+and extension field <span class="math inline">\(\mathbb{K}\)</span> over
+<span class="math inline">\(\mathbb{F}\)</span> such that <span
+class="math inline">\(f\)</span> has a root in <span
+class="math inline">\(\mathbb{K}\)</span>.</em></p>
+</div>
+<div class="theorem">
+<p><strong>Theorem 88</strong> (). <em>Let <span
+class="math inline">\(p(x) \in \mathbb{F}[x]\)</span> be irreducible.
+Then <span class="math inline">\(\left[ \mathbb{F}[x] / \langle p(x)
+\rangle : \mathbb{F}\right] = \deg{(p(x))}\)</span>.</em></p>
+</div>
+<div class="theorem">
+<p><strong>Theorem 89</strong> (). <em>Let <span
+class="math inline">\(p(x) \in \mathbb{F}[X]\)</span> be irreducible and
+<span class="math inline">\(\alpha\)</span> be a root in some extension
+field <span class="math inline">\(\mathbb{K}\)</span> of <span
+class="math inline">\(\mathbb{F}\)</span>. Then <span
+class="math inline">\(\mathbb{F}(\alpha) \cong \mathbb{F}[x] / \langle
+p(x) \rangle\)</span>.</em></p>
+</div>
+<div class="theorem">
+<p><strong>Theorem 90</strong> (). <em>Let <span
+class="math inline">\(\phi: \mathbb{F}_1 \rightarrow
+\mathbb{F}_2\)</span> be an isomorphism of fields. Let <span
+class="math inline">\(p(x)\in \mathbb{F}_1[x]\)</span> be an irreducible
+polynomial and let <span class="math inline">\(q(x) \in
+\mathbb{F}_2[x]\)</span> be the polynomial obtained by applying <span
+class="math inline">\(\phi\)</span> to the coefficients of <span
+class="math inline">\(p(x)\)</span>. Let <span
+class="math inline">\(\alpha\)</span> be a root of <span
+class="math inline">\(p(x)\)</span> in some field extension <span
+class="math inline">\(\mathbb{K}_1 \backslash \mathbb{F}_1\)</span> and
+let <span class="math inline">\(\beta\)</span> be a root of <span
+class="math inline">\(q(x)\)</span> in some field extension <span
+class="math inline">\(\mathbb{K}_2 \backslash \mathbb{F}_2\)</span>.
+Then the isomorphism <span class="math inline">\(\phi\)</span> extends
+to an isomorphism of fields <span class="math inline">\(\tilde{\phi} :
+\mathbb{F}_1(\alpha) \rightarrow \mathbb{F}_2(\beta)\)</span> such that
+<span class="math inline">\(\tilde{\phi}(\alpha) =
+\beta\)</span>.</em></p>
+</div>
+<div class="theorem">
+<p><strong>Theorem 91</strong> (). <em>Every finite extension is an
+algebraic extension.</em></p>
+</div>
+<div class="theorem">
+<p><strong>Theorem 92</strong> (). <em>Let <span
+class="math inline">\(\mathbb{K} \backslash \mathbb{F}\)</span> and
+<span class="math inline">\(\alpha \in \mathbb{K}\)</span>. Then <span
+class="math inline">\(\alpha\)</span> is algebraic over <span
+class="math inline">\(\mathbb{F}\)</span> if and only if <span
+class="math inline">\([\mathbb{F}(\alpha) : \mathbb{F}] &lt;
+\infty\)</span>.</em></p>
+</div>
+<div class="theorem">
+<p><strong>Theorem 93</strong> (). <em>Let <span
+class="math inline">\(\mathbb{K} \backslash \mathbb{F}\)</span>. The set
+of all elements <span class="math inline">\(\alpha \in
+\mathbb{K}\)</span> that are algebraic over <span
+class="math inline">\(\mathbb{F}\)</span> is a subfield of <span
+class="math inline">\(\mathbb{K}\)</span> containing <span
+class="math inline">\(\mathbb{F}\)</span>.</em></p>
+</div>
+<div class="theorem">
+<p><strong>Theorem 94</strong> (). <em>Let <span
+class="math inline">\(\mathbb{K} \backslash \mathbb{L}\)</span> and
+<span class="math inline">\(\mathbb{L} \backslash \mathbb{F}\)</span> be
+field extensions. If <span class="math inline">\([\mathbb{K}:
+\mathbb{L}] &lt; \infty\)</span> and <span
+class="math inline">\([\mathbb{L}: \mathbb{F}] &lt; \infty\)</span>,
+then <span class="math inline">\([\mathbb{K}: \mathbb{F}] &lt;
+\infty\)</span>.</em></p>
+</div>
+<div class="theorem">
+<p><strong>Theorem 95</strong> (). <em>If the powers of <span
+class="math inline">\(\alpha\)</span> are linearly independent, then the
+field extension <span class="math inline">\([\mathbb{F}(\alpha) :
+\mathbb{F}]\)</span> has infinite index. If the powers of <span
+class="math inline">\(\alpha\)</span> are linearly dependent, then <span
+class="math inline">\(\alpha\)</span> is algebraic over <span
+class="math inline">\(\mathbb{F}\)</span>.</em></p>
+</div>
+<div class="theorem">
+<p><strong>Theorem 96</strong> (). <em>Let <span
+class="math inline">\(f(x) \in \mathbb{F}[x]\)</span>. Then there exists
+a field extension <span class="math inline">\(\mathbb{K} \backslash
+\mathbb{F}\)</span> such that <span
+class="math inline">\(\mathbb{K}\)</span> is a splitting field for <span
+class="math inline">\(f(x)\)</span>.</em></p>
+</div>
+<div class="theorem">
+<p><strong>Theorem 97</strong> (). <em>If <span
+class="math inline">\(\mathbb{K} \backslash \mathbb{L}\)</span> and
+<span class="math inline">\(\mathbb{L} \backslash \mathbb{F}\)</span>
+are algebraic extensions, then <span class="math inline">\(\mathbb{K}
+\backslash \mathbb{F}\)</span> is an algebraic extension.</em></p>
+</div>
+<div class="theorem">
+<p><strong>Theorem 98</strong> (). <em>Let <span
+class="math inline">\(\mathbb{L} \backslash \mathbb{F}\)</span> be a
+field extension and let <span class="math inline">\(b_1, b_2, \dots,
+b_k\in \mathbb{L}\)</span> be algebraic over <span
+class="math inline">\(\mathbb{F}\)</span>. Then <span
+class="math display">\[\left[\mathbb{F}\left(b_1, b_2, \dots , b_k
+\right) : \mathbb{F}\right] &lt; \infty\]</span></em></p>
+</div>
+<div class="theorem">
+<p><strong>Theorem 99</strong> (). <em>Let <span
+class="math inline">\(\phi: \mathbb{F}_1 \rightarrow
+\mathbb{F}_2\)</span> be an isomorphism of fields. Let <span
+class="math inline">\(p(x)\in \mathbb{F}_1[x]\)</span> and let <span
+class="math inline">\(q(x) \in \mathbb{F}_2[x]\)</span> be the
+polynomial obtained by applying <span
+class="math inline">\(\phi\)</span> to the coefficients of <span
+class="math inline">\(p(x)\)</span>. Let <span
+class="math inline">\(\mathbb{E}_1\)</span> be the splitting field of
+<span class="math inline">\(p(x)\)</span> over <span
+class="math inline">\(\mathbb{F}_1\)</span> and let <span
+class="math inline">\(\mathbb{E}_2\)</span> be the splitting field of
+<span class="math inline">\(q(x)\)</span> over <span
+class="math inline">\(\mathbb{F}_2\)</span>. Then the isomorphism <span
+class="math inline">\(\phi\)</span> extends to an isomorphism of
+splitting fields <span class="math inline">\(\tilde{\phi} : \mathbb{E}_1
+\rightarrow \mathbb{E}_2\)</span>.</em></p>
+</div>
+<div class="theorem">
+<p><strong>Theorem 100</strong> (). <em>Splitting fields are
+unique.</em></p>
+</div>
+<div class="theorem">
+<p><strong>Theorem 101</strong> (). <em>Let <span
+class="math inline">\(\mathbb{K}_1 \cong \mathbb{K}_2\)</span>. Then
+<span class="math inline">\(\mathbb{K}_1\)</span> is algebraically
+closed if and only if <span class="math inline">\(\mathbb{K}_2\)</span>
+is algebraically closed.</em></p>
+</div>
+<div class="theorem">
+<p><strong>Theorem 102</strong> (). <em>Let <span
+class="math inline">\(\mathbb{K}_1 \backslash \mathbb{F}_1\)</span> and
+<span class="math inline">\(\mathbb{K}_2 \backslash
+\mathbb{F}_2\)</span> be field extensions. Suppose there exists an
+isomorphism of fields <span class="math inline">\(\phi: \mathbb{K}_1
+\rightarrow \mathbb{K}_2\)</span> such that <span
+class="math inline">\(\phi\left(\mathbb{F}_1\right) =
+\mathbb{F}_2\)</span>. Then</em></p>
+<ol>
+<li><p><em><span class="math inline">\(\mathbb{K}_1 \backslash
+\mathbb{F}_1\)</span> is algebraic if and only if <span
+class="math inline">\(\mathbb{K}_2 \backslash \mathbb{F}_2\)</span> is
+algebraic.</em></p></li>
+<li><p><em><span class="math inline">\(\mathbb{K}_1 \backslash
+\mathbb{F}_1\)</span> is finite if and only if <span
+class="math inline">\(\mathbb{K}_2 \backslash \mathbb{F}_2\)</span> is
+finite.</em></p></li>
+<li><p><em><span class="math inline">\(\mathbb{K}_1\)</span> is the
+algebraic closure of <span class="math inline">\(\mathbb{F}_1\)</span>
+if and only if <span class="math inline">\(\mathbb{K}_2\)</span> is the
+algebraic closure of <span
+class="math inline">\(\mathbb{F}_2\)</span></em></p></li>
+</ol>
+</div>
+<div class="theorem">
+<p><strong>Theorem 103</strong> (). <em>Let <span
+class="math inline">\(\mathbb{K}\)</span> be the algebraic closure of
+<span class="math inline">\(\mathbb{F}\)</span>. Then <span
+class="math inline">\(\mathbb{K}\)</span> is algebraically
+closed.</em></p>
+</div>
+<div class="theorem">
+<p><strong>Theorem 104</strong> (). <em>The set <span
+class="math inline">\(\mathrm{Aut}{(\mathbb{K})}\)</span> is a group
+under composition and for any subfield <span
+class="math inline">\(\mathbb{F} \leq \mathbb{K}\)</span>, the set <span
+class="math inline">\(\mathrm{Aut}{(\mathbb{K} \backslash
+\mathbb{F})}\)</span> is a subgroup of <span
+class="math inline">\(\mathrm{Aut}{(\mathbb{K})}\)</span>.</em></p>
+</div>
+<div class="theorem">
+<p><strong>Theorem 105</strong> (). <em>For any <span
+class="math inline">\(\phi \in \mathrm{Aut}{(\mathbb{K})}, \phi(1) =
+1\)</span>. Thus if <span class="math inline">\(\mathbb{F}\)</span> is
+the prime subfield of <span class="math inline">\(\mathbb{K}\)</span>,
+then <span class="math inline">\(\left.\phi\right|_\mathbb{F} =
+\mathrm{id}\)</span> for all <span class="math inline">\(\phi \in
+\mathrm{Aut}{(\mathbb{K})}\)</span>. So <span
+class="math inline">\(\mathrm{Aut}{(\mathbb{K}\backslash \mathbb{F})} =
+\mathrm{Aut}{(\mathbb{K})}\)</span>.</em></p>
+</div>
+<div class="theorem">
+<p><strong>Theorem 106</strong> (). <em>If <span
+class="math inline">\(H_1 \leq H_2 \leq
+\mathrm{Aut}{(\mathbb{K})}\)</span> are subgroups, then <span
+class="math inline">\(\mathrm{Fix}{(H_2)} \leq
+\mathrm{Fix}{(H_1)}\)</span>.</em></p>
+</div>
+<div class="theorem">
+<p><strong>Theorem 107</strong> (). <em>If <span
+class="math inline">\(\mathbb{L}\)</span> is a subfield of <span
+class="math inline">\(\mathbb{K}\)</span> and <span
+class="math inline">\(\mathbb{F}\)</span> is a subfield of <span
+class="math inline">\(\mathbb{L}\)</span>, then <span
+class="math inline">\(\mathrm{Aut}{(\mathbb{K}\backslash \mathbb{L})}
+\leq \mathrm{Aut}{(\mathbb{K}\backslash \mathbb{F})}\)</span>.</em></p>
+</div>
+<div class="theorem">
+<p><strong>Theorem 108</strong> (Fundamental theorem of algebra).
+<em><span class="math inline">\(\mathbb{C}\)</span> is algebraically
+closed.</em></p>
+</div>
+<div class="theorem">
+<p><strong>Theorem 109</strong> (). <em>Let <span
+class="math inline">\(f(x) \in \mathbb{F}[x]\)</span> and let <span
+class="math inline">\(\mathbb{K}\)</span> be the splitting field of
+<span class="math inline">\(f(x)\)</span> over <span
+class="math inline">\(\mathbb{F}\)</span>. Then <span
+class="math inline">\(\lvert \mathrm{Aut}{(\mathbb{K}\backslash
+\mathbb{F})} \rvert \leq [\mathbb{K}:\mathbb{F}]\)</span>, with equality
+if and only if <span class="math inline">\(f\)</span> is
+separable.</em></p>
+</div>
+<div class="theorem">
+<p><strong>Theorem 110</strong> (). <em>Let <span
+class="math inline">\(\mathbb{K}\)</span> be a field and <span
+class="math inline">\(G\)</span> be a finite subgroup of <span
+class="math inline">\(\mathrm{Aut}{(\mathbb{K})}\)</span>. Let <span
+class="math inline">\(\mathbb{F}\)</span> be the fixed field of <span
+class="math inline">\(G\)</span>. Then <span
+class="math inline">\(\lvert G \rvert = [\mathbb{K}:
+\mathbb{F}]\)</span>.</em></p>
+</div>
+<div class="theorem">
+<p><strong>Theorem 111</strong> (). <em>Let <span
+class="math inline">\(\mathbb{K} \backslash \mathbb{L}\)</span> and
+<span class="math inline">\(\mathbb{L} \backslash \mathbb{F}\)</span> be
+field extensions. Then <span class="math display">\[[\mathbb{K}:
+\mathbb{F}] = [\mathbb{K}: \mathbb{L}] \cdot [\mathbb{L}:
+\mathbb{F}]\]</span></em></p>
+</div>
+<div class="theorem">
+<p><strong>Theorem 112</strong> (). <em>Let <span
+class="math inline">\(\mathbb{K} \backslash \mathbb{F}\)</span> be a
+finite field extension. Then <span class="math inline">\(\lvert
+\mathrm{Aut}{(\mathbb{K}\backslash \mathbb{F})} \rvert \leq
+[\mathbb{K}:\mathbb{F}]\)</span>, with equality if and only if <span
+class="math inline">\(\mathrm{Fix}{(\mathrm{Aut}{(\mathbb{K}\backslash
+\mathbb{F})})} = \mathbb{F}\)</span>.</em></p>
+</div>
+<div class="theorem">
+<p><strong>Theorem 113</strong> (). <em>Let <span
+class="math inline">\(\phi: \mathbb{F}_1 \rightarrow
+\mathbb{F}_2\)</span> be an isomorphism of fields. Let <span
+class="math inline">\(p(x)\in \mathbb{F}_1[x]\)</span> and let <span
+class="math inline">\(q(x) \in \mathbb{F}_2[x]\)</span> be the
+polynomial obtained by applying <span
+class="math inline">\(\phi\)</span> to the coefficients of <span
+class="math inline">\(p(x)\)</span>. Let <span
+class="math inline">\(\mathbb{K}_1\)</span> be the splitting field of
+<span class="math inline">\(p(x)\)</span> over <span
+class="math inline">\(\mathbb{F}_1\)</span> and let <span
+class="math inline">\(\mathbb{K}_2\)</span> be the splitting field of
+<span class="math inline">\(q(x)\)</span> over <span
+class="math inline">\(\mathbb{F}_2\)</span>. Then <span
+class="math display">\[\lvert \left\{ \psi : \mathbb{K}_1 \rightarrow
+\mathbb{K}_2 \mid \psi \ \text{is an isomorphism that extends} \ \phi
+\right\}\rvert \leq [\mathbb{K}:\mathbb{F}]\]</span> with equality if
+<span class="math inline">\(f(x)\)</span> is separable.</em></p>
+</div>
+<div class="theorem">
+<p><strong>Theorem 114</strong> (). <em>Let <span
+class="math inline">\(\mathbb{K}\)</span> and <span
+class="math inline">\(\mathbb{L}\)</span> be fields and <span
+class="math inline">\(\chi_i: \mathbb{K} \rightarrow \mathbb{L}\)</span>
+be distinct non-zero ring homomorphisms for <span
+class="math inline">\(i = 1, 2, \dots, \mathbb{N}\)</span>. If there
+exist <span class="math inline">\(c_1, c_2, \dots, c_n \in
+\mathbb{L}\)</span> such that for all <span class="math inline">\(a \in
+\mathbb{K}\)</span>, <span class="math display">\[c_1 \chi_1 (a) + c_2
+\chi_2 (a) + \cdots + c_n \chi_n (a) = 0\]</span> then <span
+class="math inline">\(c_1 = c_2 = \cdots = c_n = 0\)</span>.</em></p>
+</div>
+<div class="theorem">
+<p><strong>Theorem 115</strong> (). <em>Let <span
+class="math inline">\(\mathbb{K}\)</span> be a field and <span
+class="math inline">\(G, H\)</span> subgroups of <span
+class="math inline">\(\mathrm{Aut}{(\mathbb{K})}\)</span>. Then <span
+class="math inline">\(\mathrm{Fix}{(G)} = \mathrm{Fix}{(H)}\)</span> if
+and only if <span class="math inline">\(G = H\)</span>.</em></p>
+</div>
+<div class="theorem">
+<p><strong>Theorem 116</strong> (). <em>If <span
+class="math inline">\(\mathbb{K}\)</span> is the splitting field of a
+separable <span class="math inline">\(f(x) \in \mathbb{F}[x]\)</span>,
+then <span class="math inline">\(\mathbb{K} \backslash
+\mathbb{F}\)</span> is a Galois extension.</em></p>
+</div>
+<div class="theorem">
+<p><strong>Theorem 117</strong> (). <em>Let <span
+class="math inline">\(\mathbb{K} \backslash \mathbb{F}\)</span> be a
+Galois extension and <span class="math inline">\(p(x) \in
+\mathbb{F}[x]\)</span> be irreducible. If <span
+class="math inline">\(p(x)\)</span> has a root in <span
+class="math inline">\(\mathbb{K}\)</span>, then <span
+class="math inline">\(p(x)\)</span> is separable and completely splits
+over <span class="math inline">\(\mathbb{K}\)</span>.</em></p>
+</div>
+<div class="theorem">
+<p><strong>Theorem 118</strong> (). <em>A finite extension <span
+class="math inline">\(\mathbb{K} \backslash \mathbb{F}\)</span> is
+Galois if and only if <span class="math inline">\(\mathbb{K}\)</span> is
+the splitting field of a separable <span class="math inline">\(f(x) \in
+\mathbb{F}[x]\)</span>.</em></p>
+</div>
+<div class="theorem">
+<p><strong>Theorem 119</strong> (). <em>Let <span
+class="math inline">\(\mathbb{K} \backslash \mathbb{F}\)</span> be a
+Galois extension and let <span class="math inline">\(\mathbb{E}\)</span>
+be a subfield of <span class="math inline">\(\mathbb{K}\)</span>
+containing <span class="math inline">\(\mathbb{F}\)</span>. Then <span
+class="math inline">\(\mathbb{K} \backslash \mathbb{E}\)</span> is also
+Galois.</em></p>
+</div>
+<div class="theorem">
+<p><strong>Theorem 120</strong> (). <em>Let <span
+class="math inline">\(\mathbb{K} \backslash \mathbb{F}\)</span> be a
+Galois extension and let <span class="math inline">\(\mathbb{E}\)</span>
+be a subfield of <span class="math inline">\(\mathbb{K}\)</span>
+containing <span class="math inline">\(\mathbb{F}\)</span>. Let <span
+class="math inline">\(G = \mathrm{Aut}{(\mathbb{K}\backslash
+\mathbb{F})}\)</span> and <span class="math inline">\(H =
+\mathrm{Aut}{(\mathbb{K}\backslash \mathbb{E})}\)</span>. Then <span
+class="math inline">\(H \leq G\)</span> and <span
+class="math inline">\([G : H] = [\mathbb{E} :
+\mathbb{F}]\)</span>.</em></p>
+</div>
+<div class="theorem">
+<p><strong>Theorem 121</strong> (). <em>Let <span
+class="math inline">\(\mathbb{K} \backslash \mathbb{F}\)</span> be a
+Galois extension and let <span class="math inline">\(\mathbb{E}\)</span>
+be a subfield of <span class="math inline">\(\mathbb{K}\)</span>
+containing <span class="math inline">\(\mathbb{F}\)</span>. Let <span
+class="math inline">\(G = \mathrm{Aut}{(\mathbb{K}\backslash
+\mathbb{F})}\)</span> and <span class="math inline">\(H =
+\mathrm{Aut}{(\mathbb{K}\backslash \mathbb{E})}\)</span>. Then <span
+class="math inline">\(H \leq G\)</span>, <span class="math inline">\(H =
+\left\{\sigma \in G : \left.\sigma\right|_{\mathbb{E}} =
+\mathrm{id}\right\}\)</span>. <span class="math inline">\(\mathbb{E}
+\backslash \mathbb{F}\)</span> is Galois if and only if <span
+class="math inline">\(H\)</span> is normal in <span
+class="math inline">\(G\)</span>.</em></p>
+</div>
+<div class="theorem">
+<p><strong>Theorem 122</strong> (Fundamental theorem of Galois theory).
+<em>Let <span class="math inline">\(\mathbb{K} \backslash
+\mathbb{F}\)</span> be a Galois extension and let <span
+class="math inline">\(G = \mathrm{Aut}{(\mathbb{K}\backslash
+\mathbb{F})}\)</span>. Then there is a bijection between the subgroups
+<span class="math inline">\(H\)</span> of <span
+class="math inline">\(G\)</span> and the subfields <span
+class="math inline">\(\mathbb{E}\)</span> of <span
+class="math inline">\(\mathbb{K}\)</span> containing <span
+class="math inline">\(\mathbb{F}\)</span> (<span
+class="math inline">\(\mathbb{F} \subseteq \mathbb{E} \subseteq
+\mathbb{K}\)</span>). This is given by the correspondences:</em></p>
+<ul>
+<li><p><em><span class="math inline">\(H \mapsto \mathrm{Fix}{(H)}
+\coloneqq \left\{x \in \mathbb{K} \mid \sigma(x) = x \ \text{for all} \
+\sigma \in H \right\}\)</span></em></p></li>
+<li><p><em><span class="math inline">\(\mathbb{E} \mapsto \left\{\sigma
+\in G \mid \left.\sigma\right|_\mathbb{E} =
+\mathrm{id}\right\}\)</span>.</em></p></li>
+</ul>
+<p><em>Under this correpondence:</em></p>
+<ol>
+<li><p><em>If <span class="math inline">\(\mathbb{E}_1,
+\mathbb{E}_2\)</span> correspond to <span
+class="math inline">\(H_1\)</span> and <span
+class="math inline">\(H_2\)</span> respectively, then <span
+class="math inline">\(\mathbb{E}_1 \subseteq \mathbb{E}_2\)</span> if
+and only if <span class="math inline">\(H_2 \leq
+H_1\)</span>.</em></p></li>
+<li><p><em><span class="math inline">\([\mathbb{K} : \mathbb{E}] =
+\lvert H \rvert\)</span> and <span class="math inline">\([\mathbb{E} :
+\mathbb{F}] = [G : H]\)</span></em></p></li>
+<li><p><em><span class="math inline">\(\mathbb{K} \backslash
+\mathbb{E}\)</span> is a Galois extension with Galois group <span
+class="math inline">\(\mathrm{Aut}{(\mathbb{K}\backslash \mathbb{E})} =
+H\)</span></em></p></li>
+<li><p><em><span class="math inline">\(\mathbb{E} \backslash
+\mathbb{F}\)</span> is Galois if and only if <span
+class="math inline">\(H\)</span> is normal in <span
+class="math inline">\(G\)</span>. In this case, <span
+class="math display">\[\mathrm{Aut}{(\mathbb{E}\backslash \mathbb{F})}
+\cong \mathrm{Aut}{(\mathbb{K}\backslash \mathbb{F})} /
+\mathrm{Aut}{(\mathbb{K}\backslash \mathbb{E})} \cong
+G/H\]</span></em></p></li>
+</ol>
+</div>
+<h1 id="modules">Modules</h1>
+<h2 id="definitions-3">Definitions</h2>
+<h4 id="module">module</h4>
+<p>Let <span class="math inline">\(R\)</span> be a unital ring and let
+<span class="math inline">\(M\)</span> be an abelian group. <span
+class="math inline">\(M\)</span> is a <strong>left <span
+class="math inline">\(R\)</span>-module</strong> if there exists an
+operation <span class="math inline">\(\star : R \times M \rightarrow
+M\)</span> such that for all <span class="math inline">\(r,s \in
+R\)</span> and <span class="math inline">\(x,y \in M\)</span>,</p>
+<ol>
+<li><p><span class="math inline">\(1 \star x = x\)</span></p></li>
+<li><p><span class="math inline">\(r \star (s \star x) = rs \star
+x\)</span></p></li>
+<li><p><span class="math inline">\(r \star (x + y) = r\star x + r \star
+y\)</span></p></li>
+<li><p><span class="math inline">\((r + s) \star x = r\star x + s\star
+x\)</span></p></li>
+</ol>
+<h4 id="group-representation">group representation</h4>
+<p>Let <span class="math inline">\(G\)</span> be a group and <span
+class="math inline">\(V\)</span> be a vector space over <span
+class="math inline">\(\mathbb{F}\)</span>. A
+<strong>representation</strong> of <span
+class="math inline">\(G\)</span> on <span
+class="math inline">\(V\)</span> is a group homomorphism <span
+class="math inline">\(\rho: G \rightarrow
+\operatorname{GL}{(V)}\)</span>. (<span
+class="math inline">\(\operatorname{GL}{(V)} \coloneqq
+\operatorname{Aut}{(V)}\)</span>, the set of all bijective linear
+transformations <span class="math inline">\(T : V \rightarrow
+V\)</span>.)</p>
+<h4 id="group-ring">group ring</h4>
+<p>The <strong>group ring</strong> <span
+class="math inline">\(\mathbb{F}[G]\)</span> is defined as <span
+class="math display">\[\mathbb{F}[G] \coloneqq \left\{f : G \rightarrow
+\mathbb{F} \mid f \ \text{is finitely supported} \right\}\]</span> with
+pointwise addition and product defined by <span
+class="math display">\[f(x) \star g(y) = \left( \sum_{x \in G} f(x)
+\delta_x \right) \star \left( \sum_{y \in G} g(y) \delta_y \right) =
+\sum_{x, y \in G} f(x)g(y) \delta_{xy}\]</span></p>
+<h4 id="bimodule">bimodule</h4>
+<p>Let <span class="math inline">\(R\)</span> and <span
+class="math inline">\(S\)</span> be unital rings. An <strong><span
+class="math inline">\((R,S)\)</span>-bimodule</strong> is a left <span
+class="math inline">\(R\)</span>-module <span
+class="math inline">\(M\)</span> that is also a right <span
+class="math inline">\(S\)</span>-module such that for all <span
+class="math inline">\(r\in R, s \in S, x \in M\)</span>, <span
+class="math display">\[(r \cdot x) \cdot s = r\cdot (x \cdot s)\]</span>
+If <span class="math inline">\(R\)</span> is commutative and <span
+class="math inline">\(M\)</span> is a left <span
+class="math inline">\(R\)</span>-module, then <span
+class="math inline">\(M\)</span> is also a right <span
+class="math inline">\(R\)</span>-module by defining <span
+class="math inline">\((x \cdot r) \coloneqq r \cdot x\)</span>. <span
+class="math inline">\(M\)</span> turns into an <span
+class="math inline">\((R,R)\)</span>-bimodule (or <span
+class="math inline">\(R\)</span>-bimodule).</p>
+<h4 id="module-homomorphism">module homomorphism</h4>
+<p>Let <span class="math inline">\(M\)</span> and <span
+class="math inline">\(N\)</span> be left <span
+class="math inline">\(R\)</span>-modules. A map <span
+class="math inline">\(\phi: M \rightarrow N\)</span> is an <strong><span
+class="math inline">\(R\)</span>-module homomorphism</strong> if and
+only if for all <span class="math inline">\(x,y \in M\)</span> and <span
+class="math inline">\(r \in R\)</span>,</p>
+<ol>
+<li><p><span class="math inline">\(\phi(x + y) = \phi(x) +
+\phi(y)\)</span></p></li>
+<li><p><span class="math inline">\(\phi(rx) = r\phi(x)\)</span></p></li>
+</ol>
+<h4 id="free-abelian-group">free abelian group</h4>
+<p>Let <span class="math inline">\(S\)</span> be a nonempty set. Let
+<span class="math inline">\(H\)</span> be the normal subgroup of <span
+class="math inline">\(\mathcal{F}_S\)</span> generated by the set <span
+class="math display">\[\left\{s_1s_2s_1^{-1}s_2^{-1} \mid s_1,s_2 \in
+S\right\}\]</span> The quotient group <span
+class="math inline">\(\mathcal{A}_S = \mathcal{F}_S/H\)</span> is the
+<strong>free abelian group generated by <span
+class="math inline">\(S\)</span></strong>.</p>
+<h4 id="tensor-product">tensor product</h4>
+<p>Let <span class="math inline">\(R\)</span> be a unital ring, <span
+class="math inline">\(M\)</span> be a right <span
+class="math inline">\(R\)</span>-module, and <span
+class="math inline">\(N\)</span> be a left <span
+class="math inline">\(R\)</span>-module. Let <span
+class="math inline">\(H\)</span> be the subgroup of <span
+class="math inline">\(\mathcal{A}_{M \times N}\)</span> generated by the
+sets</p>
+<ol>
+<li><p><span class="math inline">\(\left\{(m_1 + m_2,n) - (m_1,n) -
+(m_2,n) \mid m_1,m_2 \in M, n \in N\right\}\)</span></p></li>
+<li><p><span class="math inline">\(\left\{(m,n_1 + n_2) - (m,n_1) -
+(m,n_2) \mid m \in M, n_1,n_2 \in N\right\}\)</span></p></li>
+<li><p><span class="math inline">\(\left\{(m \cdot r, n) - (m, r\cdot
+n)\mid m \in M, n\in N\right\}\)</span></p></li>
+</ol>
+<p>The quotient group <span class="math inline">\(\mathcal{A}_{M \times
+N}/H\)</span> is called the <strong>tensor product</strong> of <span
+class="math inline">\(M\)</span> and <span
+class="math inline">\(N\)</span> and is denoted <span
+class="math inline">\(M \otimes_R N\)</span>. It is an abelian
+group.<br />
+For all <span class="math inline">\(m \in M, n \in N, r \in R\)</span>,
+the elements of the tensor product (<span
+class="math inline">\(H\)</span>-coset of <span
+class="math inline">\((m,n)\)</span>) is denoted <span
+class="math inline">\(m \otimes n\)</span>. By definition, <span
+class="math display">\[\begin{aligned}
+        (m_1 + m_2) \otimes n &amp;= (m_1 \otimes n) + (m_2 \otimes n)
+\\
+        m \otimes (n_1 + n_2) &amp;= (m \otimes n_1) + (m \otimes n_2)
+\\
+        (m \cdot r) \otimes n &amp;= m \otimes (r\cdot n)
+    
+\end{aligned}\]</span></p>
+<h2 id="theorems-3">Theorems</h2>
+<div class="theorem">
+<p><strong>Theorem 123</strong> (). <em>If <span
+class="math inline">\(\rho: G \rightarrow
+\operatorname{GL}{(V)}\)</span> is a representation, then <span
+class="math inline">\(V\)</span> is a left <span
+class="math inline">\(\mathbb{F}[G]\)</span>-module.</em></p>
+</div>
+<div class="theorem">
+<p><strong>Theorem 124</strong> (). <em>If <span
+class="math inline">\(M\)</span> is an <span
+class="math inline">\((S,R)\)</span>-bimodule, then <span
+class="math inline">\(M \otimes_R N\)</span> turns into a left <span
+class="math inline">\(S\)</span>-module via <span
+class="math display">\[s \cdot (m \otimes n) \coloneqq (s \cdot m)
+\otimes n\]</span></em></p>
+</div>
+<div class="theorem">
+<p><strong>Theorem 125</strong> (). <em>Every element in <span
+class="math inline">\(M \otimes_R N\)</span> can be wrritten as a finite
+sum of cosets. <span class="math display">\[M \otimes_R N =
+\left\{\sum_{\text{finite}} (m_i \otimes n_i)\right\}\]</span></em></p>
+</div>
+<div class="theorem">
+<p><strong>Theorem 126</strong> (universal property of the tensor
+product). <em>Let <span class="math inline">\(V,W,Z\)</span> be vector
+spaces over <span class="math inline">\(\mathbb{F}\)</span> (<span
+class="math inline">\(\mathbb{F}\)</span>-bimodules). If <span
+class="math inline">\(T:V \times W \rightarrow Z\)</span> is bilinear
+(when you fix a coordinate, then it is linear), then there exists a
+unique <span class="math inline">\(\tilde{T}: V \otimes_\mathbb{F} W
+\rightarrow Z\)</span> such that <span class="math inline">\(T(v,w) =
+\tilde{T}(v \otimes w)\)</span>.</em></p>
+</div>
+<h2 id="examples">Examples</h2>
+<h4 id="modules-1">modules</h4>
+<ul>
+<li><p>Let <span class="math inline">\(R\)</span> be a field. Then <span
+class="math inline">\(M\)</span> as a vector space over <span
+class="math inline">\(R\)</span> is a left <span
+class="math inline">\(R\)</span>-module.</p></li>
+<li><p><span class="math inline">\(\mathbb{Z}\)</span>-modules are just
+abelian groups. <span class="math display">\[\begin{aligned}
+                1 \cdot x &amp;= x \\
+                2 \cdot x &amp;= x + x \\
+            
+\end{aligned}\]</span></p></li>
+</ul>
+</body>
+</html>
